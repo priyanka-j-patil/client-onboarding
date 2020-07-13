@@ -1,0 +1,81 @@
+@import '_variables.scss';
+@import '_variables-en.scss';
+@import '_mixins.scss';
+
+.si-pagination {
+    @include flexbox;
+    align-items: center;
+    justify-content: flex-start;
+    height: 50px;
+    border-top: 1px solid rgba($black,.5);
+    &__left {
+        flex: 1;
+        @include flexbox;
+        align-items: center;
+        justify-content: center;
+
+        ul {
+            @include flexbox;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            li {
+                font-family: $regular_font-family_primary;
+                font-weight: $regular_font-weight;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: $client-secondary-color;
+                height: 26px;
+                @include flexbox;
+                align-items: center;
+                justify-content: center;
+                span{
+                    line-height: 1;
+                    margin-right: 8px;
+
+                }
+                
+                & input{
+                    width: 51px;
+                    height: 26px;
+                    text-align: center;
+                    background: transparent;
+                    border: none;
+                    box-sizing: border-box;
+                    background: #f0f0f0;
+                    @include border-radius(20px);
+                    margin-right: 8px;
+                }
+                .si-icon{
+                    width: 15px;
+                    height: 15px;
+                }
+                .si-next{
+                    margin-left:11px; 
+                    margin-right: 0px;
+                    cursor: pointer;
+                }
+                .si-pre{
+                    margin-right: 19px;
+                    cursor: pointer;
+                }
+                .si-disable{
+                    background-color: transparent !important;
+                    border: none;
+                    &::after{
+                        content: '';
+                        color: rgba($client-secondary-color,.2);
+                    }
+                }
+
+
+            }
+        }
+    }
+    &__right{
+        font-size: 14px;
+        font-family: $semi-bold_font-family_primary;
+        font-weight: $semi-bold_font-weight;
+    }
+}

@@ -1,0 +1,96 @@
+@import '_variables.scss';
+@import '_variables-en.scss';
+@import '_mixins.scss';
+.si-service_upload{
+.si-menu {
+    position: absolute;
+    width: 265px;
+
+    @include transform(translateY(-100%));
+    @include transition(all, ease, 1s);
+
+    z-index: 11;
+    padding-left: 2%;
+
+    &.active {
+        @include transform(translateY(0));
+        z-index: 11;
+
+        &::after {
+            opacity: 1;
+            display: block;
+            @include transition(fadeIn, ease, .5s);
+        }
+
+        .si-icon {
+            &::after {
+                content: "\e906" !important;
+                @include transform(rotate(177deg));
+                font-size: 29px;
+                color:$white;
+            }
+        }
+
+        .si-nav{
+            .swiper-scrollbar{
+                display: block;
+            }
+        }
+
+    }
+    
+    .si-nav{
+        .swiper-scrollbar{
+            display: none;
+        }
+    }
+
+    &::after {
+        content: '';
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba($black, .2);
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        display: none;
+
+    }
+
+    &__container {
+        width: 100%;
+
+        position: relative;
+        z-index: 11;
+     
+
+        .si-icon {
+            position: absolute;
+            width: 66px;
+            height: 75px;
+            right: 0px;
+            left: 0px;
+            bottom: -66px;
+            cursor: pointer;
+         
+            border-bottom-left-radius: 28px;
+            border-bottom-right-radius: 28px;
+
+            &::after {
+                position: absolute;
+                @include flexbox;
+                align-items: center;
+                justify-content: center;
+                color:$white;
+                @include transform(rotate(0deg) translate(0%, -0%));
+                top: 0%;
+                left: 0%;
+                font-size: 30px;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+}

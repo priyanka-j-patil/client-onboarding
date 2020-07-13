@@ -1,0 +1,1903 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Generic Admin Interface</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+    <div class="si-main">
+        <div class="si-wrapper">
+            <div class="si-page-bg si-service_upload">
+
+                <a  href="#" class="si-headerlogo"></a>
+                <div class="si-header">
+                    <div class="si-header__left">
+                        <div class="si-header__heading">
+                            <span class="si-text">Generic Admin Interface</span>
+                        </div>
+                    </div>
+                    <div class="si-header__right">
+                        <div class="si-header__drpdwn">
+                            <div class="si-drpDwn">
+                                <div class="si-drpDwn__value">
+                                    <span>Cricket</span>
+                                    <select>
+                                        <option>Dropdown Value</option>
+                                        <option>Dropdown Value</option>
+                                        <option>Dropdown Value</option>
+                                        <option>Dropdown Value</option>
+                                        <option>Dropdown Value</option>
+                                    </select>
+                                </div>
+                                <div class="si-drpDwn__list">
+                                    <div class="swiper-container">
+                                        <ul class="swiper-wrapper">
+                                            <li class="si-nav__list swiper-slide">Dropdown Value</li>
+                                            <li class="si-nav__list swiper-slide">Dropdown Value</li>
+                                            <li class="si-nav__list swiper-slide">Dropdown Value</li>
+                                            <li class="si-nav__list swiper-slide">Dropdown Value</li>
+                                            <li class="si-nav__list swiper-slide">Dropdown Value</li>
+                                        </ul>
+                                        <div class="swiper-scrollbar"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="si-header__adimnBox">
+                            <span class="si-text">Admin</span>
+                            <a href=""><span class="si-logout"></span></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="si-tableContainer">
+                    <div class="si-tabHead">
+                        <div class="si-left">
+                            <ul>
+                                <li id="all" class=""> <a href="#"><span>All</span></a></li>
+                                <li id="all" class=""> <a href="#"><span>Active</span></a></li>
+                                <li id="all" class=""> <a href="#"><span>Inactive</span></a></li>
+                             </ul>
+                        </div>
+                        <div class="si-right">
+                            <div class="si-searchBox">
+                                <input type="search" name="" id="">
+                            </div>
+                            <div class="si-btn si-download"><span>Download CSV</span></div>
+                            <div class="si-btn si-Add"><span>Add</span></div>
+                            <!-- <div class="si-select_wrapper"> -->
+                            <span class="si-icon si-select"></span>
+                            <span class="si-icon si-multipleselect"></span>
+                            <span class="si-icon si-delete si-disable"></span>
+                            <span class="si-icon si-refresh"></span>
+
+                            <!-- </div> -->
+                        </div>
+                    </div>
+                    <div class="si-tbls">
+                        <div class="si-tbls__head">
+                            <div class="si-tbls__row">
+
+                                <div class="si-tbls__cell  si-clientName">
+                                    <span>Client Name</span>
+                                    <span class="si-icon si-sort"></span>
+                                </div>
+                                <div class="si-tbls__cell  si-poc">
+                                    <span>POC</span>
+                                    <span class="si-icon si-sort"></span>
+                                </div>
+                                <div class="si-tbls__cell  si-clientEmail">
+                                    <span>Email ID</span>
+                                    <span class="si-icon si-sort"></span>
+                                </div>
+                                <div class="si-tbls__cell  si-phone">
+                                    <span>Phone</span>
+                                    <span class="si-icon si-sort"></span>
+                                </div>
+                                <div class="si-tbls__cell  si-Salesperson">
+                                    <span>Salesperson</span>
+                                    <span class="si-icon si-sort"></span>
+                                </div>
+                                <div class="si-tbls__cell  si-LivePackage">
+                                    <span>Live <br>Package</span>
+                                    <span class="si-icon si-sort"></span>
+                                </div>
+                                <div class="si-tbls__cell  si-CoveragePackage">
+                                    <span>Coverage <br>Package</span>
+                                    <span class="si-icon si-sort"></span>
+                                </div>
+                                <div class="si-tbls__cell  si-EndDate">
+                                    <span>End Date</span>
+                                    <span class="si-icon si-sort"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="si-tbls__body">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper ">
+                                    <div class=" swiper-slide si-accordian">
+
+                                        <div class="si-flexRow">
+                                            <span class="si-icon si-expand"></span>
+
+                                            <div class="si-tbls__cell si-clientName">
+                                                <span>Hindustan Times</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-poc">
+                                                <span>Hindustan Times</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-clientEmail">
+                                                <span>John@sportzinteractive.net</span>
+                                                <span class="si-additional">+1</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-phone">
+                                                <span>9903741287</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-Salesperson">
+                                                <span>David Warner</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-LivePackage">
+                                                <span>Platinum</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-CoveragePackage">
+                                                <span>Platinum</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-EndDate">
+                                                <span class="si-hoverdate">09/12/2019</span>
+                                                <div class="si-tablehover">
+                                                    <span class="si-icon si-hovercheck"></span>
+                                                    <span class="si-icon si-hoveredit"></span>
+                                                    <span class="si-icon si-hoverdelete"></span>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="si-accordianBlock">
+                                            <div class="si-row">
+
+                                                <div class="si-tbls__cell si-clientName">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-poc">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-clientEmail">
+                                                    <span>John@sportzinteractive.net</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-phone">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-Salesperson">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-LivePackage">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-CoveragePackage">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-EndDate">
+
+                                                </div>
+                                            </div>
+
+                                            <div class="si-row">
+
+                                                <div class="si-tbls__cell si-clientName">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-poc">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-clientEmail">
+                                                    <span>John@sportzinteractive.net</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-phone">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-Salesperson">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-LivePackage">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-CoveragePackage">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-EndDate">
+
+                                                </div>
+                                            </div>
+                                            
+
+                                        </div>
+
+
+                                    </div>
+
+
+                                    <div class=" swiper-slide si-accordian">
+
+                                        <div class="si-flexRow">
+                                            <span class="si-icon si-expand"></span>
+
+                                            <div class="si-tbls__cell si-clientName">
+                                                <span>Hindustan Times</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-poc">
+                                                <span>Hindustan Times</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-clientEmail">
+                                                <span>John@sportzinteractive.net</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-phone">
+                                                <span>9903741287</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-Salesperson">
+                                                <span>David Warner</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-LivePackage">
+                                                <span>Platinum</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-CoveragePackage">
+                                                <span>Platinum</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-EndDate">
+                                                <span class="si-hoverdate">09/12/2019</span>
+                                                <div class="si-tablehover">
+                                                    <span class="si-icon si-hovercheck"></span>
+                                                    <span class="si-icon si-hoveredit"></span>
+                                                    <span class="si-icon si-hoverdelete"></span>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="si-accordianBlock">
+                                            <div class="si-row">
+
+                                                <div class="si-tbls__cell si-clientName">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-poc">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-clientEmail">
+                                                    <span>John@sportzinteractive.net</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-phone">
+                                                    <span>9903741287</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-Salesperson">
+                                                    <span>David Warner</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-LivePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-CoveragePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-EndDate">
+                                                    <span>09/12/2019</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+                                    </div>
+
+                                    <div class=" swiper-slide si-accordian">
+
+                                        <div class="si-flexRow">
+                                            <!-- <span class="si-icon si-expand"></span> -->
+
+                                            <div class="si-tbls__cell si-clientName">
+                                                <span>Hindustan Times</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-poc">
+                                                <span>Hindustan Times</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-clientEmail">
+                                                <span>John@sportzinteractive.net</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-phone">
+                                                <span>9903741287</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-Salesperson">
+                                                <span>David Warner</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-LivePackage">
+                                                <span>Platinum</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-CoveragePackage">
+                                                <span>Platinum</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-EndDate">
+                                                <span class="si-hoverdate">09/12/2019</span>
+                                                <div class="si-tablehover">
+                                                    <span class="si-icon si-hovercheck"></span>
+                                                    <span class="si-icon si-hoveredit"></span>
+                                                    <span class="si-icon si-hoverdelete"></span>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+                                    <div class=" swiper-slide si-accordian si-yellow">
+
+                                        <div class="si-flexRow">
+                                            <span class="si-icon si-expand"></span>
+
+                                            <div class="si-tbls__cell si-clientName">
+                                                <span>Hindustan Times</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-poc">
+                                                <span>Hindustan Times</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-clientEmail">
+                                                <span>John@sportzinteractive.net</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-phone">
+                                                <span>9903741287</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-Salesperson">
+                                                <span>David Warner</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-LivePackage">
+                                                <span>Platinum</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-CoveragePackage">
+                                                <span>Platinum</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-EndDate">
+                                                <span class="si-hoverdate">09/12/2019</span>
+                                                <div class="si-tablehover">
+                                                    <span class="si-icon si-hovercheck"></span>
+                                                    <span class="si-icon si-hoveredit"></span>
+                                                    <span class="si-icon si-hoverdelete"></span>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="si-accordianBlock">
+                                            <div class="si-row">
+
+                                                <div class="si-tbls__cell si-clientName">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-poc">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-clientEmail">
+                                                    <span>John@sportzinteractive.net</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-phone">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-Salesperson">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-LivePackage">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-CoveragePackage">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-EndDate">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+                                    </div>
+
+                                    <div class=" swiper-slide si-accordian si-red">
+
+                                        <div class="si-flexRow ">
+                                             <span class="si-icon si-expand"></span> 
+
+                                            <div class="si-tbls__cell si-clientName">
+                                                <span>Hindustan Times</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-poc">
+                                                <span>Hindustan Times</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-clientEmail">
+                                                <span>John@sportzinteractive.net</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-phone">
+                                                <span>9903741287</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-Salesperson">
+                                                <span>David Warner</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-LivePackage">
+                                                <span>Platinum</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-CoveragePackage">
+                                                <span>Platinum</span>
+                                            </div>
+                                            <div class="si-tbls__cell si-EndDate">
+                                                <span class="si-hoverdate">09/12/2019</span>
+                                                <div class="si-tablehover">
+                                                    <span class="si-icon si-hovercheck"></span>
+                                                    <span class="si-icon si-hoveredit"></span>
+                                                    <span class="si-icon si-hoverdelete"></span>
+
+                                                </div>
+                                            </div>
+
+                                        </div> 
+                                        <div class="si-accordianBlock">
+                                            <div class="si-row">
+
+                                                <div class="si-tbls__cell si-clientName">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-poc">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-clientEmail">
+                                                    <span>John@sportzinteractive.net</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-phone">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-Salesperson">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-LivePackage">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-CoveragePackage">
+
+                                                </div>
+                                                <div class="si-tbls__cell si-EndDate">
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+                                    <div class=" swiper-slide si-accordian">
+
+                                            <div class="si-flexRow">
+                                                <span class="si-icon si-expand"></span>
+    
+                                                <div class="si-tbls__cell si-clientName">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-poc">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-clientEmail">
+                                                    <span>John@sportzinteractive.net</span>
+                                                    <span class="si-additional">+1</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-phone">
+                                                    <span>9903741287</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-Salesperson">
+                                                    <span>David Warner</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-LivePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-CoveragePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-EndDate">
+                                                    <span class="si-hoverdate">09/12/2019</span>
+                                                    <div class="si-tablehover">
+                                                        <span class="si-icon si-hovercheck"></span>
+                                                        <span class="si-icon si-hoveredit"></span>
+                                                        <span class="si-icon si-hoverdelete"></span>
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="si-accordianBlock">
+                                                <div class="si-row">
+    
+                                                    <div class="si-tbls__cell si-clientName">
+    
+                                                    </div>
+                                                    <div class="si-tbls__cell si-poc">
+    
+                                                    </div>
+                                                    <div class="si-tbls__cell si-clientEmail">
+                                                        <span>John@sportzinteractive.net</span>
+                                                    </div>
+                                                    <div class="si-tbls__cell si-phone">
+    
+                                                    </div>
+                                                    <div class="si-tbls__cell si-Salesperson">
+    
+                                                    </div>
+                                                    <div class="si-tbls__cell si-LivePackage">
+    
+                                                    </div>
+                                                    <div class="si-tbls__cell si-CoveragePackage">
+    
+                                                    </div>
+                                                    <div class="si-tbls__cell si-EndDate">
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+    
+    
+                                        </div>
+    
+    
+                                        <div class=" swiper-slide si-accordian">
+    
+                                            <div class="si-flexRow">
+                                                <span class="si-icon si-expand"></span>
+    
+                                                <div class="si-tbls__cell si-clientName">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-poc">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-clientEmail">
+                                                    <span>John@sportzinteractive.net</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-phone">
+                                                    <span>9903741287</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-Salesperson">
+                                                    <span>David Warner</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-LivePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-CoveragePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-EndDate">
+                                                    <span class="si-hoverdate">09/12/2019</span>
+                                                    <div class="si-tablehover">
+                                                        <span class="si-icon si-hovercheck"></span>
+                                                        <span class="si-icon si-hoveredit"></span>
+                                                        <span class="si-icon si-hoverdelete"></span>
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="si-accordianBlock">
+                                                <div class="si-row">
+    
+                                                    <div class="si-tbls__cell si-clientName">
+                                                        <span>Hindustan Times</span>
+                                                    </div>
+                                                    <div class="si-tbls__cell si-poc">
+                                                        <span>Hindustan Times</span>
+                                                    </div>
+                                                    <div class="si-tbls__cell si-clientEmail">
+                                                        <span>John@sportzinteractive.net</span>
+                                                    </div>
+                                                    <div class="si-tbls__cell si-phone">
+                                                        <span>9903741287</span>
+                                                    </div>
+                                                    <div class="si-tbls__cell si-Salesperson">
+                                                        <span>David Warner</span>
+                                                    </div>
+                                                    <div class="si-tbls__cell si-LivePackage">
+                                                        <span>Platinum</span>
+                                                    </div>
+                                                    <div class="si-tbls__cell si-CoveragePackage">
+                                                        <span>Platinum</span>
+                                                    </div>
+                                                    <div class="si-tbls__cell si-EndDate">
+                                                        <span>09/12/2019</span>
+                                                    </div>
+                                                </div>
+                                                
+    
+                                            </div>
+    
+    
+    
+    
+                                        </div>
+    
+                                        <div class=" swiper-slide si-accordian">
+    
+                                            <div class="si-flexRow">
+                                                <!-- <span class="si-icon si-expand"></span> -->
+    
+                                                <div class="si-tbls__cell si-clientName">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-poc">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-clientEmail">
+                                                    <span>John@sportzinteractive.net</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-phone">
+                                                    <span>9903741287</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-Salesperson">
+                                                    <span>David Warner</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-LivePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-CoveragePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-EndDate">
+                                                    <span class="si-hoverdate">09/12/2019</span>
+                                                    <div class="si-tablehover">
+                                                        <span class="si-icon si-hovercheck"></span>
+                                                        <span class="si-icon si-hoveredit"></span>
+                                                        <span class="si-icon si-hoverdelete"></span>
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+    
+    
+    
+    
+    
+                                        </div>
+    
+                                        <div class=" swiper-slide si-accordian si-yellow">
+    
+                                            <div class="si-flexRow">
+                                                <!-- <span class="si-icon si-expand"></span> -->
+    
+                                                <div class="si-tbls__cell si-clientName">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-poc">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-clientEmail">
+                                                    <span>John@sportzinteractive.net</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-phone">
+                                                    <span>9903741287</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-Salesperson">
+                                                    <span>David Warner</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-LivePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-CoveragePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-EndDate">
+                                                    <span class="si-hoverdate">09/12/2019</span>
+                                                    <div class="si-tablehover">
+                                                        <span class="si-icon si-hovercheck"></span>
+                                                        <span class="si-icon si-hoveredit"></span>
+                                                        <span class="si-icon si-hoverdelete"></span>
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+    
+                                       </div>
+    
+                                        <div class=" swiper-slide si-accordian si-red">
+    
+                                            <div class="si-flexRow">
+                                                <!-- <span class="si-icon si-expand"></span> -->
+    
+                                                <div class="si-tbls__cell si-clientName">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-poc">
+                                                    <span>Hindustan Times</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-clientEmail">
+                                                    <span>John@sportzinteractive.net</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-phone">
+                                                    <span>9903741287</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-Salesperson">
+                                                    <span>David Warner</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-LivePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-CoveragePackage">
+                                                    <span>Platinum</span>
+                                                </div>
+                                                <div class="si-tbls__cell si-EndDate">
+                                                    <span class="si-hoverdate">09/12/2019</span>
+                                                    <div class="si-tablehover">
+                                                        <span class="si-icon si-hovercheck"></span>
+                                                        <span class="si-icon si-hoveredit"></span>
+                                                        <span class="si-icon si-hoverdelete"></span>
+    
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+    
+    
+    
+    
+    
+                                        </div>
+
+
+
+                                </div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="si-tableFooter">
+                        <div class="si-left">
+                            <div class="si-totalclient">Total No. Of Clients :<span>142</span></div>
+                            <div class="si-selected">Selected :<span>2</span></div>
+                        </div>
+                        <div class="si-right">
+                            <div class="si-btn si-revoke"><span>Revoke</span></div>
+                            <div class="si-btn si-publish"><span>Publish</span></div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="si-popup active">
+            <div class="si-popup-modal si-animated si-clienttPopup">
+                <div class="si-popup-modal-bg">
+                    <span class="si-popup-close">
+                        <i class="si-icon si-closeBtn"></i>
+                    </span>
+                    <div class="si-popup-body">
+                        <div class="si-popupheader"><span>Add/Edit Client</span></div>
+
+                        <div class="si-tabs">
+                            <ul class="si-tab__links">
+                                <li class="si-tab__link active completed"><a href="#one"><span>1</span></a></li>
+                                <li class="si-tab__link"><a href="#two"><span>2</span></a></li>
+                                <li class="si-tab__link"><a href="#three"><span>3</span></a></li>
+                                <li class="si-tab__link"><a href="#four"><span>4</span></a></li>
+                            </ul>
+                            <div class="si-tab__container">
+
+                                <div id="one" class="si-one si-tab__pane animateFade">
+
+                                    <div class="si-tab__form">
+                                        <div class="swiper-container1">
+                                            <div class="swiper-wrapper">
+
+                                                <div class="si-form__control swiper-slide">
+                                                 
+                                      
+                                                  
+                                                    <div class="si-input">
+                                                        <label class="si-label">Client Name <span class="si-asterisk">*</span>:</label>
+                                                        <div class="si-cover2">
+                                                        <input type="text" class="" placeholder="Client Name">
+                                                        <span class="si-validation-txt">This Field is Required</span>
+                                                    </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                    <label class="si-label">POC:</label>
+                                                    <div class="si-input">
+                                                        <input type="text" class="" placeholder="POC">
+                                                    </div>
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                       
+                                                    <div class="si-input">
+                                                        <label class="si-label">Email Id:</label>
+                                                        <input type="text" class="" placeholder="Email Id">
+
+                                                    </div>
+                                                    <span class="si-icon si-add"></span>
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                    <div class="si-input">
+                                                            <label class="si-label">Email Id:</label>
+                                                        <input type="text" class="" placeholder="Email Id">
+
+                                                    </div>
+                                                    <span class="si-icon si-minus"></span>
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                    <div class="si-input">
+                                                            <label class="si-label">Phone No:</label>
+                                                        <input type="text" class="" placeholder="Phone No">
+
+                                                    </div>
+                                                    <span class="si-icon si-add"></span>
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                    <div class="si-input">
+                                                        <label class="si-label">Phone No:</label>
+                                                        <input type="text" class="" placeholder="Phone No">
+
+                                                    </div>
+                                                    <span class="si-icon si-minus"></span>
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                    <div class="si-input">
+                                                        <label class="si-label">SI Sales Person:</label>
+                                                        <input type="text" class="" placeholder="SI Sales Person">
+                                                    </div>
+                                                </div>
+
+                                                <div class="si-tab__radioButton swiper-slide">
+
+                                                        <label class="si-label2"> Status:</label>
+                                                    <div class="si-radioBox">
+                                                        <input type="radio" id="r13" name="Status" checked="">
+                                                        <label for="r13">Activate</label>
+                                                    </div>
+                                                    <div class="si-radioBox">
+                                                        <input type="radio" id="r14" name="Status" checked="">
+                                                        <label for="r14">Inactive</label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="swiper-scrollbar"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="two" class="si-two si-tab__pane animateFade">
+                                    <div class="si-tab__form">
+                                        <div class="swiper-container2">
+                                            <div class="swiper-wrapper">
+                                                <div class="si-form__control swiper-slide">
+                                                    <label class="si-label">Live Package :</label>
+                                                    <div class="si-drpDwn">
+                                                        <div class="si-drpDwn__value">
+                                                            <span>Add Live Package</span>
+                                                        </div>
+                                                        <div class="si-drpDwn__list">
+                                                            <div class="si-searchBox">
+                                                                <input type="search" name="" id="" placeholder="">
+                                                                <span class="si-icon si-search"></span>
+                                                            </div>
+                                                            <div class="swiper-container ">
+                                                                <ul class="swiper-wrapper">
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="11">
+                                                                        <label for="11">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="swiper-scrollbar"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                    <label class="si-label"> Coverage Package :</label>
+                                                    <div class="si-drpDwn">
+                                                        <div class="si-drpDwn__value">
+                                                            <span>Add Coverage Package</span>
+                                                        </div>
+                                                        <div class="si-drpDwn__list">
+                                                            <div class="si-searchBox">
+                                                                <input type="search" name="" id="" placeholder="">
+                                                                <span class="si-icon si-search"></span>
+                                                            </div>
+                                                            <div class="swiper-container ">
+                                                                <ul class="swiper-wrapper">
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="11">
+                                                                        <label for="11">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="swiper-scrollbar"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="swiper-scrollbar"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="three" class="si-three si-tab__pane animateFade ">
+                                    <div class="si-tab__form">
+                                        <div class="swiper-container3">
+                                            <div class="swiper-wrapper"> 
+                                                
+                                                <div class="si-form__control  swiper-slide">
+                                                        <div class="si-input si-headername si-language">
+                                                                <label class="si-label">Language :</label>
+                                                                <div class="si-drpDwn">
+                                                                    <div class="si-drpDwn__value">
+                                                                        <span>Language</span>
+                                                                    </div>
+                                                                    <div class="si-drpDwn__list">
+                                                                        <div class="si-searchBox">
+                                                                            <input type="search" name="" id="" placeholder="">
+                                                                            <span class="si-icon si-search"></span>
+                                                                        </div>
+                                                                        <div class="swiper-container ">
+                                                                            <ul class="swiper-wrapper">
+                                                                                <li class="si-checkBox  swiper-slide">
+                                                                                    <input type="checkbox" id="11">
+                                                                                    <label for="11">Dropdown Value</label>
+                                                                                </li>
+                                                                                <li class="si-checkBox  swiper-slide">
+                                                                                    <input type="checkbox" id="12">
+                                                                                    <label for="12">Dropdown Value</label>
+                                                                                </li>
+                                                                                <li class="si-checkBox  swiper-slide">
+                                                                                    <input type="checkbox" id="12">
+                                                                                    <label for="12">Dropdown Value</label>
+                                                                                </li>
+                                                                                <li class="si-checkBox  swiper-slide">
+                                                                                    <input type="checkbox" id="12">
+                                                                                    <label for="12">Dropdown Value</label>
+                                                                                </li>
+                                                                                <li class="si-checkBox  swiper-slide">
+                                                                                    <input type="checkbox" id="12">
+                                                                                    <label for="12">Dropdown Value</label>
+                                                                                </li>
+                                                                                <li class="si-checkBox  swiper-slide">
+                                                                                    <input type="checkbox" id="12">
+                                                                                    <label for="12">Dropdown Value</label>
+                                                                                </li>
+                                                                                <li class="si-checkBox  swiper-slide">
+                                                                                    <input type="checkbox" id="12">
+                                                                                    <label for="12">Dropdown Value</label>
+                                                                                </li>
+                                                                                <li class="si-checkBox  swiper-slide">
+                                                                                    <input type="checkbox" id="12">
+                                                                                    <label for="12">Dropdown Value</label>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <div class="swiper-scrollbar"></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                        </div>
+                                                        <div class="si-input si-headervalue si-location">
+                                                                <label class="si-label">Ln. Location:</label>
+                                                                <span class="si-icon si-attach"></span>
+                                                                <input type="text" class="" placeholder="Language Loaction">
+
+                                                        </div>
+
+                                                        <span class="si-icon si-add"></span>
+                                                        <span class="si-icon si-expand"></span>
+
+
+                                                </div>
+                                           
+                                        
+                                                <div class="si-form__control  swiper-slide">
+                                                    <div class="si-input si-headername si-language">
+                                                            <label class="si-label">Language :</label>
+                                                            <div class="si-drpDwn">
+                                                                <div class="si-drpDwn__value">
+                                                                    <span>Language</span>
+                                                                </div>
+                                                                <div class="si-drpDwn__list">
+                                                                    <div class="si-searchBox">
+                                                                        <input type="search" name="" id="" placeholder="">
+                                                                        <span class="si-icon si-search"></span>
+                                                                    </div>
+                                                                    <div class="swiper-container ">
+                                                                        <ul class="swiper-wrapper">
+                                                                            <li class="si-checkBox  swiper-slide">
+                                                                                <input type="checkbox" id="11">
+                                                                                <label for="11">Dropdown Value</label>
+                                                                            </li>
+                                                                            <li class="si-checkBox  swiper-slide">
+                                                                                <input type="checkbox" id="12">
+                                                                                <label for="12">Dropdown Value</label>
+                                                                            </li>
+                                                                            <li class="si-checkBox  swiper-slide">
+                                                                                <input type="checkbox" id="12">
+                                                                                <label for="12">Dropdown Value</label>
+                                                                            </li>
+                                                                            <li class="si-checkBox  swiper-slide">
+                                                                                <input type="checkbox" id="12">
+                                                                                <label for="12">Dropdown Value</label>
+                                                                            </li>
+                                                                            <li class="si-checkBox  swiper-slide">
+                                                                                <input type="checkbox" id="12">
+                                                                                <label for="12">Dropdown Value</label>
+                                                                            </li>
+                                                                            <li class="si-checkBox  swiper-slide">
+                                                                                <input type="checkbox" id="12">
+                                                                                <label for="12">Dropdown Value</label>
+                                                                            </li>
+                                                                            <li class="si-checkBox  swiper-slide">
+                                                                                <input type="checkbox" id="12">
+                                                                                <label for="12">Dropdown Value</label>
+                                                                            </li>
+                                                                            <li class="si-checkBox  swiper-slide">
+                                                                                <input type="checkbox" id="12">
+                                                                                <label for="12">Dropdown Value</label>
+                                                                            </li>
+                                                                        </ul>
+                                                                        <div class="swiper-scrollbar"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                    </div>
+                                                    <div class="si-input si-headervalue si-location">
+                                                            <label class="si-label">Ln Location:</label>
+                                                            <span class="si-icon si-attach"></span>
+                                                            <input type="text" class="" placeholder="Language Loaction">
+
+                                                    </div>
+
+                                                    <span class="si-icon si-minus"></span>
+                                                    <span class="si-icon si-expand"></span>
+
+
+                                                </div>
+                                              
+                                                <div class="si-form__control swiper-slide">
+                                                        <label class="si-label">League Name :</label>
+                                                        <div class="si-drpDwn">
+                                                            <div class="si-drpDwn__value">
+                                                                <span>League Name</span>
+                                                            </div>
+                                                            <div class="si-drpDwn__list">
+                                                                <div class="si-searchBox">
+                                                                    <input type="search" name="" id="" placeholder="">
+                                                                    <span class="si-icon si-search"></span>
+                                                                </div>
+                                                                <div class="swiper-container ">
+                                                                    <ul class="swiper-wrapper">
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="11">
+                                                                            <label for="11">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="swiper-scrollbar"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <label class="si-label">Competition Type :</label>
+                                                        <div class="si-drpDwn">
+                                                            <div class="si-drpDwn__value">
+                                                                <span>Competition Type</span>
+                                                            </div>
+                                                            <div class="si-drpDwn__list">
+                                                                <div class="si-searchBox">
+                                                                    <input type="search" name="" id="" placeholder="">
+                                                                    <span class="si-icon si-search"></span>
+                                                                </div>
+                                                                <div class="swiper-container ">
+                                                                    <ul class="swiper-wrapper">
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="11">
+                                                                            <label for="11">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="swiper-scrollbar"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                <div class="si-form__control swiper-slide">
+                                                    <label class="si-label">Parent Series Name :</label>
+                                                    <div class="si-drpDwn">
+                                                        <div class="si-drpDwn__value">
+                                                            <span>Parent Series Name</span>
+                                                        </div>
+                                                        <div class="si-drpDwn__list">
+                                                            <div class="si-searchBox">
+                                                                <input type="search" name="" id="" placeholder="">
+                                                                <span class="si-icon si-search"></span>
+                                                            </div>
+                                                            <div class="swiper-container ">
+                                                                <ul class="swiper-wrapper">
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="11">
+                                                                        <label for="11">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="swiper-scrollbar"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                    <label class="si-label"> Series Name :</label>
+                                                    <div class="si-drpDwn">
+                                                        <div class="si-drpDwn__value">
+                                                            <span>Series Name</span>
+                                                        </div>
+                                                        <div class="si-drpDwn__list">
+                                                            <div class="si-searchBox">
+                                                                <input type="search" name="" id="" placeholder="">
+                                                                <span class="si-icon si-search"></span>
+                                                            </div>
+                                                            <div class="swiper-container ">
+                                                                <ul class="swiper-wrapper">
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="11">
+                                                                        <label for="11">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="swiper-scrollbar"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                    <label class="si-label"> Match Name :</label>
+                                                    <div class="si-drpDwn">
+                                                        <div class="si-drpDwn__value">
+                                                            <span>Match Name</span>
+                                                        </div>
+                                                        <div class="si-drpDwn__list">
+                                                            <div class="si-searchBox">
+                                                                <input type="search" name="" id="" placeholder="">
+                                                                <span class="si-icon si-search"></span>
+                                                            </div>
+                                                            <div class="swiper-container ">
+                                                                <ul class="swiper-wrapper">
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="11">
+                                                                        <label for="11">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="swiper-scrollbar"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                    <label class="si-label"> Team Name :</label>
+                                                    <div class="si-drpDwn">
+                                                        <div class="si-drpDwn__value">
+                                                            <span>Team Name</span>
+                                                        </div>
+                                                        <div class="si-drpDwn__list">
+                                                            <div class="si-searchBox">
+                                                                <input type="search" name="" id="" placeholder="">
+                                                                <span class="si-icon si-search"></span>
+                                                            </div>
+                                                            <div class="swiper-container ">
+                                                                <ul class="swiper-wrapper">
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="11">
+                                                                        <label for="11">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="swiper-scrollbar"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="si-form__control swiper-slide">
+                                                        <label class="si-label">Date:</label>
+                                                    <div class="si-input si-startDate">
+                                                        <input type="text" class="" placeholder="Activation Start Date">
+                                                    </div>
+
+                                                    <div class="si-input si-endDate">
+                                                        <input type="text" class="" placeholder="End Date">
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                            <div class="swiper-scrollbar"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div id="four" class="si-four si-tab__pane animateFade active in">
+                                    <div class="si-tab__form">
+                                        <div class="swiper-container4">
+                                            <div class="swiper-wrapper">
+                                                <div class="si-form__control swiper-slide">
+                                                        <label class="si-label2">Delivery Type :</label>
+
+                                                    <div class="si-drpDwn">
+                                                        <div class="si-drpDwn__value">
+                                                            <span>Delivery Type</span>
+                                                        </div>
+                                                        <div class="si-drpDwn__list">
+                                                            <div class="si-searchBox">
+                                                                <input type="search" name="" id="" placeholder="">
+                                                                <span class="si-icon si-search"></span>
+                                                            </div>
+                                                            <div class="swiper-container ">
+                                                                <ul class="swiper-wrapper">
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="11">
+                                                                        <label for="11">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                    <li class="si-checkBox  swiper-slide">
+                                                                        <input type="checkbox" id="12">
+                                                                        <label for="12">Dropdown Value</label>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="swiper-scrollbar"></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="si-http swiper-slide" style="display:none;">
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">API Name :</label>
+                                                             <input type="text" class="" placeholder="API Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <label class="si-label2">HTTP Request :</label>
+                                                        <div class="si-drpDwn">
+                                                            <div class="si-drpDwn__value">
+                                                                <span>HTTP Request</span>
+                                                            </div>
+                                                            <div class="si-drpDwn__list">
+                                                                <div class="si-searchBox">
+                                                                    <input type="search" name="" id="" placeholder="">
+                                                                    <span class="si-icon si-search"></span>
+                                                                </div>
+                                                                <div class="swiper-container ">
+                                                                    <ul class="swiper-wrapper">
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="11">
+                                                                            <label for="11">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                        <li class="si-checkBox  swiper-slide">
+                                                                            <input type="checkbox" id="12">
+                                                                            <label for="12">Dropdown Value</label>
+                                                                        </li>
+                                                                    </ul>
+                                                                    <div class="swiper-scrollbar"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input si-headername">
+                                                            <label class="si-label2">Header Name :</label>
+                                                            <input type="text" class="" placeholder="Header Name">
+                                                        </div>
+                                                        <div class="si-input si-headervalue">
+                                                            <label class="si-label2">Header Value :</label>
+                                                            <input type="text" class="" placeholder="Header Value">
+
+                                                        </div>
+
+                                                        <span class="si-icon si-add"></span>
+
+
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input si-headername">
+                                                            <label class="si-label2">Header Name :</label>
+                                                            <input type="text" class="" placeholder="Header Name">
+                                                        </div>
+                                                        <div class="si-input si-headervalue">
+                                                            <label class="si-label2">Header Value :</label>
+                                                            <input type="text" class="" placeholder="Header Value">
+
+                                                        </div>
+                                                        <span class="si-icon si-minus"></span>
+
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">Username :</label>
+                                                            <input type="text" class="" placeholder="Username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">Password :</label>
+                                                            <input type="password" class="" placeholder="Password">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="si-tab__radioButton swiper-slide">
+                                                            <label class="si-label2"> Status:</label>
+                                                        <div class="si-radioBox">
+                                                               
+                                                            <input type="radio" id="r3" name="Status" checked="">
+                                                            <label for="r3">API Text</label>
+                                                        </div>
+                                                        <div class="si-radioBox">
+                                                            <input type="radio" id="r4" name="Status" checked="">
+                                                            <label for="r4">Inactivate</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="si-ftp swiper-slide" style="">
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">IP :</label>
+                                                            <input type="text" class="" placeholder="IP">
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">Port Number :</label>
+                                                            <input type="text" class="" placeholder="Port Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input si-folder">
+                                                            <label class="si-label2">FTP Folder:</label>
+                                                            <span class="si-icon si-attach"></span>
+                                                            <input type="text" class="" placeholder="FTP Folder">
+                                                           
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">Username:</label>
+                                                            <input type="text" class="" placeholder="Username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">Password:</label>
+                                                            <input type="password" class="" placeholder="Password">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="si-tab__radioButton swiper-slide">
+                                                            <label class="si-label2"> FTP Status:</label>
+                                                        <div class="si-radioBox">
+                                                            <input type="radio" id="r5" name="Status" checked="">
+                                                            <label for="r5">Activate</label>
+                                                        </div>
+                                                        <div class="si-radioBox">
+                                                            <input type="radio" id="r6" name="Status" checked="">
+                                                            <label for="r6">Inactivate</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="si-tls swiper-slide" style="display:none;">
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">IP:</label>
+                                                            <input type="text" class="" placeholder="IP">
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">Port Number:</label>
+                                                            <input type="text" class="" placeholder="Port Number">
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">FTP Folder:</label>
+                                                            <input type="text" class="" placeholder="FTP Folder">
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2"> Location:</label>
+                                                            <input type="text" class=""
+                                                                placeholder="Certificate Location">
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">Username:</label>
+                                                            <input type="text" class="" placeholder="Username">
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">Password:</label>
+                                                            <input type="password" class="" placeholder="Password">
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="si-tab__radioButton swiper-slide">
+                                                            <label class="si-label2"> FTP Status:</label>
+                                                        <div class="si-radioBox">
+                                                            <input type="radio" id="r7" name="Status" checked="">
+                                                            <label for="r7">Activate</label>
+                                                        </div>
+                                                        <div class="si-radioBox">
+                                                            <input type="radio" id="r8" name="Status" checked="">
+                                                            <label for="r8">Inactivate</label>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="si-api swiper-slide" style="display:none;">
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">Client Key:</label>
+                                                            <input type="text" class="" placeholder="Client Key">
+                                                        </div>
+                                                    </div>
+                                                    <div class="si-form__control swiper-slide">
+                                                        <div class="si-input">
+                                                            <label class="si-label2">Secret Key:</label>
+                                                            <input type="text" class="" placeholder="Secret Key">
+                                                        </div>
+                                                    </div>
+
+
+
+                                                </div>
+                                                <div class="si-aws swiper-slide" style="display:none;">
+                                                        <div class="si-form__control swiper-slide">
+                                                            <div class="si-input">
+                                                                <label class="si-label2"> Service URL:</label>
+                                                                <input type="text" class="" placeholder="AWS Service URL">
+                                                            </div>
+                                                        </div>
+                                                        <div class="si-form__control swiper-slide">
+                                                            <div class="si-input">
+                                                                <label class="si-label2"> Region Name:</label>
+                                                                <input type="text" class="" placeholder="AWS Region Name">
+                                                            </div>
+                                                        </div>
+                                                        <div class="si-form__control swiper-slide">
+                                                                <div class="si-input">
+                                                                    <label class="si-label2"> API Key:</label>
+                                                                    <input type="text" class="" placeholder="AWS API Key">
+                                                                </div>
+                                                        </div>
+                                                        <div class="si-form__control swiper-slide">
+                                                                <div class="si-input">
+                                                                    <label class="si-label2"> Secret Key:</label>
+                                                                    <input type="text" class="" placeholder="AWS Secret Key">
+                                                                </div>
+                                                        </div>
+                                                        <div class="si-form__control swiper-slide">
+                                                                <div class="si-input">
+                                                                    <label class="si-label2"> Bucket Name:</label>
+                                                                    <input type="text" class="" placeholder="AWS Bucket Name">
+                                                                </div>
+                                                        </div>
+                                                        <div class="si-form__control swiper-slide">
+                                                                <div class="si-input">
+                                                                    <label class="si-label2"> Folder:</label>
+                                                                    <input type="text" class="" placeholder="AWS Folder">
+                                                                </div>
+                                                        </div>
+    
+                                                        <div class="si-tab__radioButton swiper-slide">
+                                                                <label class="si-label2"> AWS Status:</label>
+                                                                <div class="si-radioBox"> 
+                                                              
+                                                                    <input type="radio" id="r9" name="Status" checked="">
+                                                                    <label for="r9">Activate</label>
+                                                                </div>
+                                                                <div class="si-radioBox">
+                                                                    <input type="radio" id="r10" name="Status" checked="">
+                                                                    <label for="r10">Inactivate</label>
+                                                                </div>
+                                                            </div>
+    
+    
+                                                </div>
+
+
+
+
+
+
+                                            </div>
+                                            <div class="swiper-scrollbar"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="si-tab__button">
+                                <div class="si-btn">
+                                    <span>discard</span>
+                                </div>
+                                <div class="si-btn">
+                                    <span>save</span>
+                                </div>
+                                <span class="si-icon si-previous si-disable"></span>
+                                <span class="si-icon si-popupnext"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.2/js/swiper.min.js"></script>-->
+        <script src="../js/main.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            var swiper = new Swiper('.swiper-container', {
+                direction: 'vertical',
+                slidesPerView: 'auto',
+                freeMode: true,
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                mousewheel: true,
+            });
+
+            var swiper = new Swiper('.swiper-container1', {
+                direction: 'vertical',
+                slidesPerView: 'auto',
+                freeMode: true,
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                mousewheel: true,
+            });
+
+
+            var swiper = new Swiper('.swiper-container2', {
+                direction: 'vertical',
+                slidesPerView: 'auto',
+                freeMode: true,
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                mousewheel: true,
+            });
+
+
+            var swiper = new Swiper('.swiper-container3', {
+                direction: 'vertical',
+                slidesPerView: 'auto',
+                freeMode: true,
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                mousewheel: true,
+            });
+
+
+            var swiper = new Swiper('.swiper-container4', {
+                direction: 'vertical',
+                slidesPerView: 'auto',
+                freeMode: true,
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+                mousewheel: true,
+            });
+        </script>
+</body>
+
+</html>

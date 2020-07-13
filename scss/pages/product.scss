@@ -1,0 +1,31 @@
+@import '../_mixins.scss';
+@import '../_variables.scss';
+@import '../_variables-en.scss';
+
+
+.si-addProduct{
+    .si-tbls {
+    &__head {
+  
+        .si-tbls {
+            &__row {
+         
+                 padding-left: 0px !important;
+                 padding-right: 0px !important;
+
+            }
+        }
+    } 
+    &__cell {
+        
+        &.si-productName{
+            flex: 0 0 62% !important;
+            width: 62% !important;
+            @media screen and (max-width:$media-mobile-max-580) {
+                flex: 0 0 59% !important;
+                width: 59% !important;
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MetropolisSemiBold';
+    src: url('fonts/MetropolisSemiBold.eot');
+    src: url('fonts/MetropolisSemiBold.eot') format('embedded-opentype'),
+         url('fonts/MetropolisSemiBold.woff2') format('woff2'),
+         url('fonts/MetropolisSemiBold.woff') format('woff'),
+         url('fonts/MetropolisSemiBold.ttf') format('truetype'),
+         url('fonts/MetropolisSemiBold.svg#MetropolisSemiBold') format('svg');
+}

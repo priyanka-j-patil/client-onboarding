@@ -1,0 +1,48 @@
+@import '_variables.scss';
+@import '_variables-en.scss';
+@import '_mixins.scss';
+
+.si-breadCrumbs {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 5px;
+
+    li {
+        position: relative;
+        margin-left: 5px;
+        padding-left: 10px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 1px;
+            height: calc(100% - 25%);
+            background-color: $white;
+            left: 0px;
+            top: 50%;
+            @include transform(skewX(-18.5deg) translateY(-50%));
+        }
+
+        &:last-child {
+            a {
+                pointer-events: none;
+                text-decoration: none;
+            }
+        }
+
+        a {
+            color: $white;
+            font-family: $medium_font-family_primary;
+            font-weight: $medium_font-weight;
+            font-size: 16px;
+            line-height: 1;
+            text-transform: capitalize;
+            @media screen and (max-width:$media-mobile-small) {
+                span{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+@import '_variables.scss';
+@import '_variables-en.scss';
+@import '_mixins.scss';
+
+.si-popupdelete{
+    .si-popup-modal{
+      @include border-radius(25px);
+    } 
+    .si-popup-modal-bg{
+        padding: 1px;
+        max-width: 585px;
+        min-height: 173px;
+    }
+    .si-popuptitle{
+    font-family: $bold_font-family_primary;
+    font-weight: $bold_font-weight;
+    font-size: 18px;
+    color:$black;
+    padding-bottom:20px;
+    } 
+    .si_optionbutton{
+        margin-top: 24px;
+        @include flexbox;
+        justify-content: center;
+    } 
+    .si-yesbutton,.si-nobutton{
+      flex:0 0 191px;
+      width:191px;
+      height: 35px;
+    
+   
+       & input{
+           width:100%;
+           height:100%;
+           background-color: $background-color ;
+           color:$white;
+           border:none;
+           cursor: pointer;
+           border-radius: 25px;
+           color:$black;
+           border:1px solid $table-header-color;
+           font-family: $bold_font-family_primary;
+           font-weight: $bold_font-weight;
+       }
+
+    } 
+    .si-nobutton{
+       margin-left:15px;
+    }  
+    .si-addBox{
+        padding-top:36px;
+    }
+     
+    .si-popup-close2{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background:$background-color;
+        right: -12px;
+        top: -9px;
+        border-radius: 50%;
+        &:after{
+            content: "\e910";
+            font-family: 'genericadmin' !important;
+            position: absolute;
+            color:$black;
+            font-size: 12px;
+            font-family: $bold_font-family_primary;
+            font-weight: $bold_font-weight;
+        }
+    }
+
+  
+}

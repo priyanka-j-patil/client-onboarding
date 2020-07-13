@@ -1,0 +1,310 @@
+@import '_variables.scss';
+@import '_variables-en.scss';
+@import '_mixins.scss';
+
+.si-service_upload {
+    .si-headerlogo {
+        position: absolute;
+        z-index: 111;
+        @include linearGradient(190deg,$client-secondary-color 22%,$client-primary-color 100%);
+        height: 67px;
+        width: 55px;
+        color: $white;
+        margin-left: 30px;
+         display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        border-bottom-left-radius: 28px;
+        border-bottom-right-radius: 28px;
+        @media screen and (max-width:$media-mobile-max-680) {
+            margin-left: 5px;
+           } 
+           @media screen and (max-width:$media-mobile-small-max-384) {
+            width: 49px;
+           
+           } 
+        &:before {
+            content: "\e908";
+            font-family: 'genericadmin' !important;
+            position: absolute;
+            font-size: 40px;
+             height: 100%;
+            padding-top: 10px;
+            
+        }
+    }
+
+    .si-header {
+        @include flexbox;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 59px;
+        @include linearGradient(88deg,$header-primary-color,$header-secondary-color);
+        color: $white;
+        padding: 0px 10px 0px 7px;
+        @media screen and (max-width:$media-tablet-med-max) {
+            .si-breadCrumbs{
+                position: absolute;
+                margin-left: -96px;
+                top: 81px;
+                @include linearGradient(88deg,$header-primary-color,$header-secondary-color);
+                width: 100%;
+                padding: 12px;
+            }
+            
+        } 
+        @media screen and (max-width:$media-mobile-max) {
+            .si-breadCrumbs{
+              
+                margin-left: -93px;
+          
+            }
+            
+        } 
+        @media screen and (max-width:$media-mobile-max-680) {
+            .si-breadCrumbs{
+              
+                margin-left: -76px;
+                display: flex;
+                flex-flow: wrap;
+          
+            }
+            
+        } 
+        
+
+        &__right {
+            @include flexbox;
+            align-items: center;
+        }
+
+        &__left {
+            @include flexbox;
+            align-items: center;
+            margin-left: 88px;
+            @media screen and (max-width:$media-mobile-max-680) {
+                margin-left: 64px;
+               
+               } 
+               @media screen and (max-width:$media-mobile-med-max) {
+               display: block;
+               
+               } 
+
+        }
+
+        &__heading {
+            @include flexbox;
+            align-items: center;
+            justify-content: flex-start;
+            @media screen and (max-width:$media-mobile-max-520) {
+              display: block;
+              line-height: 21px;
+               } 
+            .si-icon {
+                width: 46px;
+                height: 46px;
+                @include border-radius(50%);
+                background-color: $client-primary-color;
+
+                &::after {
+                    font-size: 36px;
+                    color: $white;
+                }
+            }
+
+            .si-text {
+                font-family: $medium_font-family_primary;
+                font-weight: $medium_font-weight;
+                font-size: 20px;
+                color:$client-deactive-color;
+                @media screen and (max-width:$media-mobile-max) {
+                    font-size: 15px;
+                   } 
+
+
+            }
+        }
+
+        &__drpdwn {
+            height: 30px;
+            margin-right: 20px;
+            width: 155px;
+            @media screen and (max-width:$media-mobile-small-max) {
+                margin-right: 5px;
+                width: 108px;
+            }   
+            @media screen and (max-width:$media-mobile-small) {
+                width: 111px;
+            }   
+            .si-drpDwn {
+             
+
+                &__value {
+                    height: 30px;
+                    padding: 7px 15px;
+                    padding-right: 40px;
+                    text-transform: capitalize;
+                    background-color: $white;
+                    @include border-radius(50px);
+                    font-family: $medium_font-family_primary;
+                    font-weight: $medium_font-weight;
+                    font-size: 14px;
+                    color: $header-primary-color;
+                    @media screen and (max-width:$media-mobile-max-680) { 
+                        background: $tabBg;
+                    }
+
+                }
+
+                &__list {
+                    @include border-radius(16px);
+
+                    ul {
+                        li {
+                            padding: 10px 15px;
+                            font-family: $medium_font-family_primary;
+                            font-weight: $medium_font-weight;
+                            font-size: 14px;
+                            color: $header-primary-color;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__adimnBox {
+            @include flexbox;
+            align-items: center;
+            justify-content: flex-start;
+            font-family: $medium_font-family_primary;
+            font-weight: $medium_font-weight;
+            font-size: 16px;
+            color: $client-deactive-color;
+
+            & .si-text {
+                margin-right: 16px;
+                @media screen and (max-width:$media-tablet-small-max ) {
+                 display: none;
+                } 
+            }
+
+            .si-logout {
+
+                position: relative;
+
+                &:before {
+                    content: "\e909";
+                    font-family: 'genericadmin' !important;
+                    font-size: 25px;
+                    color: $white;
+                }
+            }
+        }
+
+
+    }
+
+    .si-body {
+        &Container {
+            padding: 0px 0px 0px 55px;
+
+            &__head {
+                @include flexbox;
+                justify-content: space-between;
+                align-items: center;
+                margin: 20px 0px;
+                padding: 0px 30px;
+            }
+
+            &__left {
+                .si-text {
+                  
+                    text-transform: capitalize;
+                    color: $client-primary-color;
+                }
+            }
+
+            &__right {
+                @include flexbox;
+                align-items: center;
+                justify-content: flex-end;
+                position: relative;
+
+                .si-searchBox {
+                    margin-right: 20px;
+
+                    &::after {
+                        top: 48%;
+                        @include transform(translateY(-48%));
+                    }
+
+                    & input {
+                        width: 75px;
+                        @include transition(width, 0.5s, ease-in-out);
+                        float: right;
+                        @include border-radius(50px);
+                        background-color: $background-color;
+
+                        &:focus {
+                            width: 100%;
+                        }
+                    }
+                }
+
+                .si-btn {
+                    @include border-radius(50px);
+                    @include flexbox;
+                    align-items: center;
+                    justify-content: center;
+                    min-width: 165px;
+
+                    &:not(:last-child) {
+                        margin-right: 15px;
+                    }
+
+                    em {
+                        line-height: 1;
+                    }
+
+                    & .si-icon {
+                        width: 18px;
+                        height: 18px;
+                        margin-right: 5px;
+                        border: 1px solid $white;
+                        @include border-radius(50%);
+
+                        &::after {
+                            font-size: 10px;
+                            color: $white;
+                        }
+                    }
+
+                    &.si-sumbit,
+                    &.si-cancel {
+                        min-width: 135px;
+                    }
+
+                    &.si-addNew {
+                        min-width: 155px;
+
+                    }
+                }
+            }
+        }
+
+        &Box {
+            height: calc(100vh - 130px);
+            background: $white;
+            @include border-radius(50px 0px 0px 0px);
+            @include box-shadow(-2px, -2px, 10px, 0, rgba($black, .2));
+        }
+    }
+
+    .si-header__right.si-header__drpdwn.si-drpDwn__value.si-nav__list:hover:after,
+    .si-nav__list:hover:before {
+        background: transparent !important;
+    }
+}

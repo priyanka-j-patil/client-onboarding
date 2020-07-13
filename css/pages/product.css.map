@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAUY,2CAAO,CAEF,YAAY,CAAE,cAAc,CAC5B,aAAa,CAAE,cAAc,CAOtC,4CAAgB,CACZ,IAAI,CAAE,kBAAkB,CACxB,KAAK,CAAE,cAAc,CACrB,oCAAoD,CAHxD,4CAAgB,CAIR,IAAI,CAAE,kBAAkB,CACxB,KAAK,CAAE,cAAc",
+"sources": ["../../scss/pages/product.scss"],
+"names": [],
+"file": "product.css"
+}

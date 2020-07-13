@@ -1,0 +1,182 @@
+@import '../_mixins.scss';
+@import '../_variables.scss';
+@import '../_variables-en.scss';
+.si-label,.si-label2,.si-label3,.si-label4{
+    flex: 0 0 148px;
+    @include flexbox;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 7px;
+    font-family: $bold_font-family_primary;
+    font-weight:$bold_font-weight;
+    color: rgba($header-secondary-color, .7);
+    font-size:14px;
+}
+.si-label2{
+    flex: 0 0 119px;
+}
+.si-label3{
+    flex: 0 0 162px;
+}
+.si-label4{
+    flex: 0 0 145px;
+}
+
+.si-drpDwn {
+    @include flexbox;
+    width: 100%;
+    flex-flow: column;
+    flex-wrap: wrap;
+    overflow: hidden;
+    &__value {
+        height: auto;
+        white-space: normal;
+        padding: 8px 10px;
+        padding-right: 40px;
+        text-transform: capitalize;
+        font-family: $medium_font-family_primary;
+        font-weight: $medium_font-weight;
+        font-size: 14px;
+        border: none;
+        border-bottom: 1px solid rgba($header-secondary-color, .5);
+        color: rgba($header-secondary-color, .7);
+        padding-bottom: 9px;
+        @media screen and (max-width:$media-mobile-small-max) {
+            font-size: 12px;
+        }
+        &::after {
+            content: "\e905";
+            @include transform(translateY(-50%) rotate(180deg));
+        }
+    }
+    &.active {
+        .si-drpDwn__value {
+            &::after { 
+                content: "\e905";
+                @include transform(translateY(-50%) rotate(0deg));
+            }
+        }
+    }
+
+    &__list {
+        top: 0px;
+        // background: rgba($gray, .6);
+        background: $table-header-color;
+        @include border-radius(0px 0px 20px 20px);
+        padding: 20px 10px 10px;
+        box-shadow: 0 0 0;
+        position: relative;
+        overflow: auto;
+
+        &::after {
+            content: '';
+            width: 100%;
+            height: 12px;
+            position: absolute;
+            // @include linearGradient(to top, #fff, rgba(255, 255, 255, 0));                            
+            bottom: 0px;
+            left: 0px;
+        }
+
+        .si-searchBox {
+            max-width: 100%;
+            margin-bottom: 15px;
+            position: relative;
+
+            .si-icon {
+                &.si-search {
+                    width: 20px;
+                    height: 20px;
+                    position: absolute;
+                    right: 26px;
+                    top: 17%;
+
+                    &:after {
+                        content: "\e907";
+                        font-size: 18px;
+                        color: $header-secondary-color;
+
+
+                    }
+                }
+            }
+
+            input {
+                @include border-radius(50px);
+            }
+        } 
+  
+        li {
+            height: auto;
+
+            padding: 0px 25px;
+            margin-bottom: 10px;
+            border-bottom: none;
+            width: 100%;
+            //  & div{
+            //      width: 100%;
+            //  }
+            &:hover {
+                background-color: $transparent;
+            }
+
+            &.si-checkBox {
+                [type="checkbox"] {
+
+                    &:checked,
+                    &:not(:checked) {
+                        &+label {
+                            padding-right: 40px;
+                            padding-left: 0px;
+                            display: block;
+                            font-family: $medium_font-family_primary;
+                            font-weight: $medium_font-weight;
+                            font-size: 14px;
+                            color: $header-primary-color;
+
+                            &::before,
+                            &::after {
+                                @include border-radius(50%);
+                                width: 20px;
+                                height: 20px;
+                                top: 50%;
+                                @include transform(translateY(-50%))
+                            }
+
+                            &:before {
+                                right: 0;
+                                left: auto;
+
+                            }
+
+                            &:after {
+                                right: 0px;
+                                left: auto;
+                                content: "\e90d";
+                                background: $black;
+                                color: $white;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    &:not(:checked) {
+                        &+label {
+                            &:after {
+                                color: $header-primary-color;
+                                background: $transparent;
+                                @include transform(translateY(-50%) scale(1));
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.si-addp{
+    .si-drpDwn__list ul li{
+        border-bottom: 0px;
+    }
+}

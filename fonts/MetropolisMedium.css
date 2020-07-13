@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'MetropolisMedium';
+    src: url('fonts/MetropolisMedium.eot');
+    src: url('fonts/MetropolisMedium.eot') format('embedded-opentype'),
+         url('fonts/MetropolisMedium.woff2') format('woff2'),
+         url('fonts/MetropolisMedium.woff') format('woff'),
+         url('fonts/MetropolisMedium.ttf') format('truetype'),
+         url('fonts/MetropolisMedium.svg#MetropolisMedium') format('svg');
+}

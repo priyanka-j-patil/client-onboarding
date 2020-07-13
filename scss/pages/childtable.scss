@@ -1,0 +1,46 @@
+@import "../_mixins.scss";
+@import "../_variables.scss";
+@import "../_variables-en.scss";
+.si-childtable {
+ 
+  .si-tbls__body {
+    .si-accordian {
+      &.active {
+        .si-accordianBlock {
+          .si-row {
+            &:hover {
+              background-color: #9d9d9dc9;
+              cursor: pointer;
+
+              // @include opacity(50%);
+              @include transition(background, 0.3s, ease-out);
+              .si-hoverdate {
+                display: none;
+              }
+              .si-tablehover {
+            
+                @extend %flexbox;
+                margin-left: -6px;
+                flex: 1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .tp2{
+      position: relative;
+  }
+  .tp2 .tooltiptext {
+   
+    max-width: 250px !important;
+    width: 250px;
+     padding: 9px;
+     right: 105%;
+     left: initial;
+     word-break: break-all;
+  }
+
+
+}

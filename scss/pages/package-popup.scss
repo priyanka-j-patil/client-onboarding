@@ -1,0 +1,1149 @@
+@import '../_mixins.scss';
+@import '../_variables.scss';
+@import '../_variables-en.scss';
+
+.si-popup { 
+    // @media only screen and (min-device-width:$media-mobile-small) and (max-device-width: $media-mobile-max-600) and (orientation: portrait) {
+
+    //     height: calc(100vh - 180px);
+    // }
+
+    @media only screen and (min-device-width:$media-mobile-med) and (max-device-width: $media-tablet-small-max) and (orientation: landscape) {
+        height: 100%;
+        overflow: auto;
+    }
+    .si-asterisk{
+        color:$asterisk-color;
+        padding:0 2px;
+    } 
+    .si-validation-txt{
+        font-size: 13px;
+        padding-left: 10px;
+        color:$asterisk-color;
+        font-family: $medium_font-family_primary;
+        font-weight: $medium_font-weight;
+        // display:none;
+        //  text-align: center;
+        padding-top: 5px;
+        display: block !important;
+        @media screen and (max-width:$media-mobile-small-max-420) {  
+            font-size: 11px;
+         }
+      
+    } 
+    .si-packagec{
+        .si-validation-txt{
+          text-align: center;
+          display: block !important;
+        }
+    }
+    .si-cover2{
+        width:100%;
+    }
+    .si-packagePopup {
+        @include border-radius(30px);
+        max-width: 657px;
+        @media screen and (max-width:$media-mobile-max-640) {
+            max-width: 100%;
+            margin: 0 10px;
+        }
+      
+        .si-popup { 
+            &-modal{
+                // @media screen and (max-width:$media-mobile-max-640) {
+                //   margin: 0 10px;
+                // }
+               
+            }
+            &-modal-bg {
+                max-width: 657px;
+                width: 100%;
+                min-height: 612px;
+                padding: 0px;
+                height: 100%;
+                @media screen and (max-width:$media-tablet-med-max) {
+                    max-width: 100%;
+                   
+                } 
+                @media only screen and (min-device-width:$media-mobile-med) and (max-device-width: $media-tablet-small-max) and (orientation: landscape) {
+                    min-height: 100%;
+                    margin-top: 10px;
+                    }
+            }
+
+            &-body {
+                min-height: 612px;
+                display: block;
+                position: relative;
+                @media only screen and (min-device-width:$media-mobile-med) and (max-device-width: $media-tablet-small-max) and (orientation: landscape) {
+                    height: 100%;
+                    background: #fff;
+                    max-height: 100%;
+                    margin-bottom: 20px;
+                    border-top-right-radius: 27px;
+                    border-top-left-radius: 27px;
+                }
+                .si-asteriskmark{
+                    color:$asterisk-color;
+                    padding:0 2px;
+                    position: absolute;
+                    right: -14px;
+                    top: -3px;
+                    font-size: 20px;
+                    z-index: 1;
+                }
+                .si-packagec{
+                    margin-bottom:12px;
+                }
+                .si-packageNameInput {
+                    height: 42px;
+                    @include flexbox;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    border-bottom: 1px solid #aaa;
+                    width: 400px;
+                    margin: auto;
+                    margin-top: 10px;
+                      @media screen and (max-width:$media-mobile-small-max) {
+                        width: 307px;
+                        }
+                        @media screen and (max-width:$media-mobile-small-max-384) {
+                        width: 237px;
+                        }
+                    .si-icon {
+                        &.si-edit {
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                            right: -25px;
+                            top: 24%;
+        
+                            &:after {
+                           
+                                font-size: 18px;
+                                color: $header-secondary-color;
+        
+        
+                            }
+                        }
+                    }
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        padding: 5px 10px;
+                        text-align: center;
+                        border: none;
+                        text-transform: uppercase;
+                        font-family: $medium_font-family_primary;
+                        font-weight: $medium_font-weight;
+                        font-size: 18px;
+                    }
+                }
+
+                .si-tab {
+                    &__link {
+                        flex: 1;
+                        text-align: center;
+                        text-transform: capitalize;
+                        height: 100%;
+
+                        a {
+                            color: $black;
+                            font-family: $medium_font-family_primary;
+                            font-weight: $medium_font-weight;
+                            font-size: 14px;
+                            height: 100%;
+                            @include flexbox;
+                            align-items: center;
+                            justify-content: center;
+                        }
+
+                        &.active,
+                        &:hover {
+                            background-color: $client-primary-color;
+                            font-family: $bold_font-family_primary;
+                            font-weight: $bold_font-weight;
+                        }
+
+                        &s {
+                            @include flexbox;
+                            justify-content: center;
+                            align-items: center;
+                            height: 30px;
+                            width: calc(100% - 25%);
+                            border: 1px solid $client-primary-color;
+                            margin: auto;
+                            @include border-radius(20px);
+                            overflow: hidden;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    &__container {
+                        padding: 0px 15px;
+                        overflow: hidden;
+                        .si-addProduct{
+                            @media screen and (max-width:$media-mobile-small-max) {
+                                height: 355px;
+                                overflow: auto;
+                            } 
+                            @media only screen and (min-device-width:$media-mobile-med) and (max-device-width: $media-tablet-small-max) and (orientation: landscape) { 
+                                height: 355px;
+                                overflow: auto;
+                            }
+                        }
+                        .si-searchBox {
+                            max-width: 100%;
+                            margin: 0px 0px 14px;
+                            height:26px;
+                            
+                             
+                            .si-icon {
+                                &.si-search {
+                                    width: 20px;
+                                    height: 20px;
+                                    position: absolute;
+                                    right: 26px;
+                                    top: 17%;
+
+                                    &:after {
+                                        content: "\e907";
+                                        font-size: 16px;
+                                        color: $header-secondary-color;
+                                        
+                                        top: 43%;
+
+
+                                    }
+                                }
+                            }
+ 
+                            input {
+                                @include border-radius(50px);
+                            }
+                        } 
+                       
+                    }
+
+                    &__button {
+                        @include flexbox;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 25px;
+                        position: absolute;
+                        left: 50%;
+                        @include transform(translateX(-50%));
+                        bottom: 20px;
+                        .si-btn {
+                            min-width: 180px;
+                            height: 30px;
+                            background-color: transparent;
+                            border: 1px solid $client-primary-color;
+                            @include border-radius(25px);
+                            font-family: $bold_font-family_primary;
+                            font-weight: $bold_font-weight;
+                            font-size: 14px;
+                            @media screen and (max-width:$media-mobile-small-max-384) {
+                                min-width: 111px;
+                             }
+                            &:not(:last-child) {
+                                margin-right: 15px;
+                            }
+                        }
+                    }
+
+                    &__radioButton {
+                        
+                        padding: 0px 25px;
+                        margin-top: 23px;
+                        @include flexbox;
+                        align-items: center;
+                        justify-content: flex-start;
+                        @media screen and (max-width:$media-tablet-med-max) {
+                            margin-top: 15px;
+                       }
+
+                        .si-radioBox {
+                            text-transform: capitalize;
+                            font-family: $bold_font-family_primary;
+                            font-weight: $bold_font-weight;
+                            font-size: 14px;
+
+                            [type="radio"] {
+
+                                &:checked,
+                                &:not(:checked) {
+                                    &+label {
+                                        padding-left: 21px;
+                                        color: $black;
+                                        line-height: 18px;
+                                    }
+                                }
+                            }
+
+                            &:not(:last-child) {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &header {
+                position: relative;
+                width: 100%;
+                height: 52px;
+                background-color: $header-secondary-color;
+                @include flexbox;
+                justify-content: center;
+                align-items: center;
+                @include border-radius(50px);
+                font-family: $bold_font-family_primary;
+                font-weight: $bold_font-weight;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: $client-primary-color;
+            }
+
+            &-close {
+                right: 10px;
+                top: 10px;
+                z-index: 1;
+
+                .si-icon {
+                    &::after {
+                        content: '\e910';
+                        border: 1px solid $white;
+                        color: $white;
+                        font-size: 11px;
+                    }
+                }
+            }
+
+        }
+
+        .si-tbls {
+            @include border-radius(15px);
+            overflow: hidden;
+            border: 1px solid #bfbfbf;
+            background-color: $white;
+
+            &__row {
+                @include flexbox;
+                justify-content: flex-start;
+                align-items: flex-start;
+                // cursor: pointer;
+
+                &.active {
+                    .si-expand {
+                        &::after {
+                            @include transform(translateY(-50%) rotate(180deg));
+                        }
+                    }
+
+                    .si-child {
+                        opacity: 1;
+                        height: 100px;
+                        -webkit-transition: height 0.3s ease, opacity 0.3s ease;
+                        -moz-transition: height 0.3s ease, opacity 0.3s ease;
+                        -ms-transition: height 0.3s ease, opacity 0.3s ease;
+                        -o-transition: height 0.3s ease, opacity 0.3s ease;
+                        transition: height 0.3s ease, opacity 0.3s ease;
+                        display: block;
+                        width: 100%;
+                    } 
+                 
+                }
+
+                .si-expand {
+                    position: absolute;
+                    width: 32px;
+                    left: 0px;
+
+                    &::after {
+                        content: "\e91a";
+                    }
+                }
+            }
+
+            &__head {
+                background: #dfdfdf;
+                padding: 0px 5px;
+                padding-right:7px;
+                // @media screen and (max-width:$media-mobile-small-max-384) {  
+                //       width: calc(100% + 100%);
+
+                // }
+                .si-tickBox{
+                   flex:0 0 8% !important;
+                   width:8% !important;
+                }
+                .si-tbls {
+                    &__row {
+                        height: 42px;
+                        background-color: $table-header-color;
+                         padding-left: 32px;
+                         padding-right: 16px;
+                         @media screen and (max-width:$media-mobile-small-max-384) {  
+                            padding-left: 10px;
+                            padding-right: 10px;
+
+                        }
+
+                    }
+                }
+            }
+
+            &__cell {
+                @include flexbox;
+                align-items: center;
+                justify-content: flex-start;
+                height: 100%;
+                padding: 6px;
+                color: $header-primary-color;
+                font-family: $bold_font-family_primary;
+                font-weight: $bold_font-weight;
+                position: relative;
+                font-size: 14px;
+
+                .si-sort {
+                    width: 25px;
+                    height: 25px;
+                    margin-left: 15px;
+
+                    &:after {
+                        content: "\e90c";
+                        right: 0px;
+                        cursor: pointer;
+                    }
+
+                    &.active {
+                        &:after {
+                            content: "\e90b";
+                        }
+
+                    }
+                }
+
+                .si-hovercheck {
+                    &::after {
+                        content: "\e902";
+                    }
+
+                    &.active {
+                        &::after {
+                            content: "\e91b";
+                        }
+                    }
+                }
+                &.si-starBox {
+                    flex: 0 0 6%;
+                    width: 6%;
+                    position: relative;
+                                                 
+                    .si-icon {
+                        &.si-star {
+                            width: 20px;
+                            height: 20px;
+                            position: absolute;
+                           
+                       &::after {
+                        content: "\e929";
+                        font-size: 18px;
+                        color: $header-secondary-color;
+                        position: absolute;
+        
+        
+                            }
+                       }
+                       &.si-fillstar {
+                        width: 20px;
+                        height: 20px;
+                        position: absolute;
+                       
+                   &::after {
+                    content: "\e92a" !important;
+                    font-size: 18px;
+                    color: $header-secondary-color;
+                    position: absolute;
+    
+    
+                        }
+                   }
+                    }
+                }
+
+                // &.si-productName{
+                //     flex: 0 0 62% !important;
+                //     width: 62% !important;
+                // }
+                &.si-fileFormat {
+                    flex: 0 0 24%;
+                    width: 24%;
+                    @media screen and (max-width:$media-mobile-max-580) {
+                        flex: 0 0 28%;
+                        width:28%;
+                    }
+                }
+
+                &.si-tickBox {
+                    flex: 0 0 8%;
+                    width: 8%;
+                }
+            } 
+       
+
+            &__body {
+                height: 252px;
+                overflow: auto;
+                padding: 0px 5px;
+
+                .si-tbls__row {
+                    flex-flow: column;
+                    height: auto;
+
+                    &:not(:last-child) {
+                        border-bottom: 1px solid rgba($gray, .4);
+                    }
+                }
+            }
+
+            .swiper-scrollbar {
+                right: 0px;
+            }
+
+            .si-child {
+                width: 100%;
+                opacity: 0;
+                height: 0;
+                -webkit-transition: height 0.3s ease, opacity 0.3s ease;
+                -moz-transition: height 0.3s ease, opacity 0.3s ease;
+                -ms-transition: height 0.3s ease, opacity 0.3s ease;
+                -o-transition: height 0.3s ease, opacity 0.3s ease;
+                transition: height 0.3s ease, opacity 0.3s ease;
+                display: none;
+            }
+
+            .si-parent,
+            .si-row {
+                @include flexbox;
+                width: 100%;
+                // padding-left: 32px;
+                height: 42px;
+                position: relative;
+                padding-right: 2px;
+                @media screen and (max-width:$media-mobile-max-580) {
+                    .si-parent{
+                   min-height: 42px;
+                   align-items: center;
+                   
+                   }
+                }
+
+            }
+
+
+
+        }
+
+        .si-addPackage {
+           
+
+            .si-tbls { 
+                // @media screen and (max-width:$media-mobile-small-max-384) {
+                //     overflow: auto;
+                // } 
+                &__head{
+                    // @media screen and (max-width:$media-mobile-small-max-384) {
+                    //     width: calc(100% + 100%);
+                    // }
+                }
+                &__body {
+                    // @media screen and (max-width:$media-mobile-small-max-384) {
+                    //     width: calc(100% + 100%);
+                    // }
+                    .si-tbls__row {
+                        flex-flow: row;
+                        height: 42px;
+                       padding-left: 32px;
+                       cursor: context-menu;
+                         @media screen and (max-width:$media-mobile-small-max-384) {  
+                                padding-left: 10px;
+                                padding-right: 10px;
+
+                            }
+
+                    //    cursor: pointer;
+                    //    &.active{
+                    //      .si-tickBox{
+                    //     .si-hovercheck {
+                    //         &::after {
+                    //             content: "\e91b";
+                    //         }
+                    //        }
+                    //      }
+                    //    }
+                    }
+                }
+
+                &__cell { 
+
+                    
+                    &.si-productName {
+                        flex: 0 0 92%;
+                        width: 92%;
+                        // flex: 0 0 86%;
+                        // width: 86%;
+                    }
+                }
+            }
+        }
+    }
+
+    .si-productPopup {
+        @include border-radius(30px);
+        max-width: 700px;
+        @media screen and (max-width:$media-mobile-max-680) {  
+            max-width: 100%;
+            margin: 0 10px;
+        }
+    
+        .si-popup { 
+          
+            .si-form__control {
+            
+            }
+            &-modal-bg {
+                max-width: 700px;
+                width: 100%;
+                min-height: 515px;
+                padding: 0px;
+                height: 100%;
+                @media screen and (max-width:$media-mobile-max-680) {  
+                    max-width: 100%;
+                    // margin: 0 10px;
+                }
+                @media only screen and (min-device-width:$media-mobile-med) and (max-device-width: $media-tablet-small-max) and (orientation: landscape) {
+                    min-height: 100%;
+                    margin-top: 10px;
+                    }
+            }
+ 
+         
+            &-body {
+                min-height: 515px;
+                display: block;
+                position: relative;
+                @media only screen and (min-device-width:$media-mobile-med) and (max-device-width: $media-tablet-small-max) and (orientation: landscape) {
+                    height: 100%;
+                    background: #fff;
+                    max-height: 100%;
+                    margin-bottom: 20px;
+                    border-top-right-radius: 27px;
+                    border-top-left-radius: 27px;
+                    min-height: 612px;
+                }
+
+                .si-packageNameInput {
+                    height: 30px;
+                    @include flexbox;
+                    justify-content: center;
+                    align-items: center;
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        padding: 5px 10px;
+                        text-align: center;
+                        border: none;
+                        text-transform: uppercase;
+                        font-family: $medium_font-family_primary;
+                        font-weight: $medium_font-weight;
+                        font-size: 14px;
+                    }
+                }
+
+                .si-tab {
+
+                    &__container {
+                        padding: 0 15px;
+                        overflow: hidden;
+                    }
+                   
+                    &__form {
+                        height: 465px;
+                        position: relative;
+                        padding-top: 12px;
+                        overflow: auto;
+                        .swiper-container10{
+                          height: 100%;
+                          .swiper-scrollbar{
+                            right: -8px;
+                          } 
+                          .swiper-slide{
+                            height: auto !important;
+                          }
+                        } 
+                        .si-label,.si-label2,.si-label3{
+                            flex: 0 0 148px;
+                            @include flexbox;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            padding-top: 7px;
+                            font-family: $bold_font-family_primary;
+                            font-weight:$bold_font-weight;
+                            color: rgba($header-secondary-color, .7);
+                            font-size:14px;
+                        }
+                        .si-label2{
+                            flex: 0 0 119px;
+                        }
+                        .si-label3{
+                            flex: 0 0 166px;
+                            @media screen and (max-width:$media-mobile-small-max-420) {  
+                              font-size: 12px;
+                              flex: 0 0 112px;
+                            }
+                        }
+                        .si-drpDwn {
+                            @include flexbox;
+                            width: 100%;
+                            flex-flow: column;
+                            flex-wrap: wrap;
+                            overflow: hidden;
+                            &__value {
+                                height: auto;
+                                white-space: normal;
+                                padding: 8px 10px;
+                                padding-right: 40px;
+                                text-transform: capitalize;
+                                font-family: $medium_font-family_primary;
+                                font-weight: $medium_font-weight;
+                                font-size: 14px;
+                                border: none;
+                                border-bottom: 1px solid rgba($header-secondary-color, .5);
+                                color: rgba($header-secondary-color, .7);
+                                @media screen and (max-width:$media-mobile-small-max-420) {  
+                                    font-size: 12px;
+                                 }
+                                &::after {
+                                    content: "\e905";
+                                    @include transform(translateY(-50%) rotate(180deg));
+                                }
+                            }
+                            &.active {
+                                .si-drpDwn__value {
+                                    &::after {
+                                        @include transform(translateY(-50%) rotate(0deg));
+                                    }
+                                }
+                            }
+
+                            &__list {
+                                top: 0px;
+                                background: rgba($gray, .4);
+                                @include border-radius(0px 0px 20px 20px);
+                                padding: 20px 10px 10px;
+                                box-shadow: 0 0 0;
+                                position: relative;
+                                overflow: auto;
+
+                                &::after {
+                                    content: '';
+                                    width: 100%;
+                                    height: 12px;
+                                    position: absolute;
+                                    // @include linearGradient(to top, #fff, rgba(255, 255, 255, 0));                            
+                                    bottom: 0px;
+                                    left: 0px;
+                                }
+
+                                .si-searchBox {
+                                    max-width: 100%;
+                                    margin-bottom: 15px;
+                                    position: relative;
+                                                                
+                                    .si-icon {
+                                        &.si-search {
+                                            width: 20px;
+                                            height: 20px;
+                                            position: absolute;
+                                            right: 26px;
+                                            top: 17%;
+                        
+                                            &:after {
+                                                content: "\e907";
+                                                font-size: 18px;
+                                                color: $header-secondary-color;
+                        
+                        
+                                            }
+                                        }
+                                    }
+                                    input {
+                                        @include border-radius(50px);
+                                    }
+                                }
+
+                                li {
+                                    height: auto;
+
+                                    padding: 0px 25px;
+                                    margin-bottom: 10px;
+                                    border-bottom: none;
+
+                                    &:hover {
+                                        background-color: $transparent;
+                                    }
+
+                                    &.si-checkBox {
+                                        [type="checkbox"] {
+
+                                            &:checked,
+                                            &:not(:checked) {
+                                                &+label {
+                                                    padding-right: 40px;
+                                                    padding-left: 0px;
+                                                    display: block;
+                                                    font-family: $medium_font-family_primary;
+                                                    font-weight: $medium_font-weight;
+                                                    font-size: 14px;
+                                                    color: $header-primary-color;
+
+                                                    &::before,
+                                                    &::after {
+                                                        @include border-radius(50%);
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        top: 50%;
+                                                        @include transform(translateY(-50%))
+                                                    }
+
+                                                    &:before {
+                                                        right: 0;
+                                                        left: auto;
+
+                                                    }
+
+                                                    &:after {
+                                                        right: 0px;
+                                                        left: auto;
+                                                        content: "\e90d";
+                                                        background: $black;
+                                                        color: $white;
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                            }
+
+                                            &:not(:checked) {
+                                                &+label {
+                                                    &:after {
+                                                        color: $header-primary-color;
+                                                        background: $transparent;
+                                                        @include transform(translateY(-50%) scale(1));
+                                                        opacity: 1;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+                        .si-input{
+                            @include flexbox;
+                            width:100%;
+                            input{
+                                height: 30px;
+                                padding: 8px 10px;
+                                padding-right: 0px;
+                             
+                                font-family: $medium_font-family_primary;
+                                font-weight: $medium_font-weight;
+                                font-size: 14px;
+                                border: none;
+                                border-bottom: 1px solid rgba($header-secondary-color, .5);
+                                @include placeholder {color: rgba($header-secondary-color, .7);text-transform: capitalize}
+                                @media screen and (max-width:$media-mobile-small-max-420) {  
+                                   font-size: 12px;
+                                }
+                            }
+                        }
+                        .si-folder{
+          
+                            .si-icon{
+                                &.si-attach{
+                                width: 39px;
+                                height: 32px;
+                                 top: -5px;
+                                 border-radius: 10px;
+                                 border: 1px solid $table-active;
+                                 background-color:$lightgray;
+                                 left: 0;
+                                &:after{
+                                 content: "\e928";
+                                 font-size: 22px;
+                                 color:$black;
+                                 transform: rotate(45deg);
+                                 top: 4px;
+                                 left: 2px; 
+                                 @media screen and (max-width:$media-mobile-max-580) {  
+                                    font-size: 18px;
+                                    top: 6px;
+                                  }
+                             }
+                             
+                                    }
+                                }
+                            }
+                    }
+
+                    &__button {
+                        @include flexbox;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 20px;
+                        padding-bottom: 26px;
+                        position: relative;
+
+                        .si-btn {
+                            min-width: 180px;
+                            height: 30px;
+                            background-color: transparent;
+                            border: 1px solid $client-primary-color;
+                            @include border-radius(25px);
+                            font-family: $bold_font-family_primary;
+                            font-weight: $bold_font-weight;
+                            font-size: 14px;
+                            @media screen and (max-width:$media-mobile-small-max-384) {
+                                min-width: 111px;
+                             }
+                            &:not(:last-child) {
+                                margin-right: 15px;
+                            }
+                        }
+
+                        .si-icon {
+                            position: absolute;
+                            width: 25px;
+                            height: 25px;
+
+                            &::after {
+                                font-size: 14px;
+                            }
+
+                            &.si-disable {
+                                &::after {
+                                    color: #afb6bc
+                                }
+                            }
+
+                            &.si-previous {
+                                left: 10px;
+
+                                &::after {
+                                    content: "\e905";
+                                    @include transform(translateY(-50%) rotate(-90deg));
+                                }
+                            }
+
+                            &.si-popupnext {
+                                right: 10px;
+
+                                &::after {
+                                    content: "\e905";
+                                    @include transform(translateY(-50%) rotate(90deg));
+                                }
+                            }
+                        }
+                    }
+
+                    &__radioButton {
+                        @include flexbox;
+                        align-items: center;
+                        justify-content: flex-start;
+                        padding: 0px 25px;
+                        margin-top:7px;
+
+                        .si-radioBox {
+                            text-transform: capitalize;
+                            font-family: $bold_font-family_primary;
+                            font-weight: $bold_font-weight;
+                            font-size: 14px;
+                            @media screen and (max-width:$media-mobile-small-max-420) {  
+                                font-size: 12px;
+                             }
+                            [type="radio"] {
+
+                                &:checked,
+                                &:not(:checked) {
+                                    &+label {
+                                        padding-left: 21px;
+                                        color: $black;
+                                        line-height: 18px;
+                                    }
+                                }
+                            }
+
+                            &:not(:last-child) {
+                                margin-right: 10px;
+                            } 
+                      
+                        }
+                    }
+
+                    &__link {
+                        &.active , &.completed {
+                            a {
+                                border-top: 1px dotted $table-active;
+
+                                &:before {
+                                    background-color: $table-active;
+                                    border: none;
+                                    transition: all 200ms ease-in;
+                                }
+                            }
+                        }
+
+                        a {
+                            padding: 0px 40px;
+                            @include flexbox;
+                            display: flex;
+                            justify-content: center;
+                            border-top: 1px dotted #d6dce0;
+                            position: relative;
+                            @include transition(all, 200ms, ease-in);
+
+                            &:before {
+                                content: "";
+                                width: 28px;
+                                height: 28px;
+                                background-color: $white;
+                                border-radius: 25px;
+                                border: 1px dotted #ddd;
+                                position: absolute;
+                                top: -14px;
+                                left: 50%;
+                                @include transform(translateX(-50%));
+                                @include transition(all, 200ms, ease-in);
+                            }
+
+                            span {
+                                position: absolute;
+                                left: 50%;
+                                width: 24px;
+                                height: 24px;
+                                top: 50%;
+                                @include flexbox;
+                                justify-content: center;
+                                align-items: center;
+                                color: $header-primary-color !important;
+                                font-family: $bold_font-family_primary;
+                                font-weight: $bold_font-weight;
+                                font-size: 14px;
+                                @include transform(translate(-50%, -50%));
+                            }
+                        }
+
+                        &s {
+                            @include flexbox;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 20px 0px;
+                        }
+                    }
+                }
+            }
+
+            &header {
+                position: relative;
+                width: 100%;
+                height: 52px;
+                background-color: $header-secondary-color;
+                @include flexbox;
+                justify-content: center;
+                align-items: center;
+                @include border-radius(50px);
+                font-family: $bold_font-family_primary;
+                font-weight: $bold_font-weight;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: $client-primary-color;
+            }
+
+            &-close {
+                right: 10px;
+                top: 10px;
+                z-index: 1;
+
+                .si-icon {
+                    &::after {
+                        content: '\e910';
+                        border: 1px solid $white;
+                        color: $white;
+                        font-size: 11px;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+.si-cal{
+    @include flexbox;
+    position: relative;
+    border-bottom: 1px solid rgba($header-secondary-color, .5);
+    padding-bottom: 10px;
+    .si-ch{
+        width: 3%;
+        flex: 0 0 3%;
+        height: 18px !important;
+        position: absolute;
+        right: 76% !important;
+        top: 9%;
+    }
+    .si-ctext{
+        flex:0 0 20%;
+        font-size: 14px;
+        padding-left: 10px;
+        padding-top: 1%;
+        height: 17px;
+        font-family: $medium_font-family_primary;
+        font-weight: $medium_font-weight;
+        color: rgba($header-secondary-color, .7);
+         text-transform: capitalize;
+    
+    }
+}
+.si-live{
+  .si-tab__radioButton{
+      margin-top: 0 !important;
+      padding: 0px 10px !important;
+  } 
+  .si-txt{
+    flex: 0 0 17% !important;
+    width:17%;
+  } 
+  .si-radioBox [type="radio"]:checked + label:before, .si-radioBox [type="radio"]:not(:checked) + label:before{
+    width: 11px;
+    height: 11px;
+  } 
+  .si-radioBox [type="radio"]:checked + label::after, .si-radioBox [type="radio"]:not(:checked) + label::after{
+    width: 5px;
+    height: 5px;
+    top: 4px;
+    left: 4px;
+  } 
+  .si-radioBox [type="radio"]:checked + label::after, .si-radioBox [type="radio"]:not(:checked) + label{
+    color: rgba($header-secondary-color, .7) !important;
+    text-transform: capitalize;
+  }
+} 
+.si-gap{
+    padding-left: 26px !important;
+} 
+}

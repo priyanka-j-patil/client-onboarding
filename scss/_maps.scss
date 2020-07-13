@@ -1,0 +1,7 @@
+@each $name , $value in $icons {
+    .si-#{$name}{
+        &::after{
+            content : $value !important;            
+        }
+    }
+}

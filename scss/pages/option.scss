@@ -1,0 +1,397 @@
+@import '_variables.scss';
+@import '_variables-en.scss';
+@import '_mixins.scss';
+
+.si-service_upload {
+    .si-options {
+        @include flexbox;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 59px);
+        padding: 0px 12px;
+        @media screen and (max-width:$media-tablet-med-max) {
+            flex-flow: wrap;
+            margin-top: 99px;
+            height: auto;
+        }
+        @media screen and (max-width:$media-tablet-small-max ) {
+        //  height:auto;
+        //  margin-top: 35px;
+        }
+        @media screen and (max-width:$media-mobile-max-680) {
+            margin-top: 95px;
+        
+        }   
+        .si-dataRow {
+            @include flexbox;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+    }
+
+    .si-option {
+
+        position: relative;
+        flex: 0 0 201px;
+        width: 201px;
+        height: 290px;
+        background: $tabBg;
+        @include border-radius(15px);
+        @include transition(transform, .3s, ease-out);
+        margin: 10px 30px;
+        @media screen and (max-width:$media-mobile-max-580) {
+            flex: 0 0 217px;
+            width:217px;
+        }
+        @media screen and (max-width:$media-mobile-max-520) {
+            margin: 10px 0px;
+            flex: 0 0 276px;
+            width: 276px;
+        }
+
+        .si-icon {
+            width: 100%;
+            height: 100%;
+            cursor: auto;
+
+            &::after {
+                font-size: 102px;
+                @include flexbox;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                top: 100px;
+            }
+
+            &.si-product:after {
+                content: "\e917";
+            }
+
+            &.si-package:after {
+                content: "\e919";
+            }
+
+            &.si-clients:after {
+                content: "\e918";
+            } 
+            &.si-link:after {
+                content: "\e92b";
+            } 
+
+            &.si-live:after {
+                content: "\e926";
+            } 
+
+            &.si-viewAll:after{
+                content: "\e927";
+            }
+
+            &.si-coverage:after {
+                content: "\e91d";
+            }
+
+            &.si-openBox:after {
+                content: "\e91f";
+            }
+
+            &.si-emptyBox:after {
+                content: "\e91e";
+            }
+
+            &.si-json:after {
+                content: "\e922";
+            }
+
+            &.si-xml:after {
+                content: "\e925";
+            }
+
+            &.si-html:after {
+                content: "\e921";
+            }
+
+            &.si-txt:after {
+                content: "\e924";
+            }
+        }
+
+        .si-subotionswrapper {
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 20px;
+            width: 100%;
+            height: 61px;
+            @include transition(0.2s, all, ease);
+            @include flexbox;
+
+            .si-icon {
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                background: $header-secondary-color;
+                padding: 3px;
+                cursor: pointer;
+
+                &::after {
+                    font-size: 23px;
+                    color: $white;
+                    @include flexbox;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    @include border-radius(50%);
+                    width: 100%;
+                    top: 50%;
+                }
+
+                &.si-view:after {
+                    content: "\e911";
+                }
+
+                &.si-Client_edit:after {
+                    content: "\e916";
+                }
+
+                &.si-add:after {
+                    content: "\e912";
+                }
+
+                &.si-Client_edit {
+                    margin: 0 22px;
+                }
+
+                &.si-folder:after {
+                    content: "\e920";
+                }
+
+            }
+        }
+
+        &:hover {
+            // cursor: pointer;
+            background: $client-hover-color;
+            @include transition(transform, .3s, ease-out);
+
+            .si-subotionswrapper {
+                @include transform(translateY(-100%));
+            }
+
+            .si-option_name_wrapper {
+                // cursor: pointer;
+                background: $client-primary-color;
+                @include opacity(50%);
+                @include transition(background, .3s, ease-out);
+            }
+
+            .si-option_name {
+                color: $header-primary-color;
+                @include transition(transform, 5s, color);
+                word-break: break-all;
+            } 
+            .si-create{
+                cursor: pointer;
+            }
+        }
+
+        .si-option_name_wrapper {
+            position: absolute;
+            background: $header-secondary-color;
+            width: calc(100% + 10%);
+            height: 61px;
+            @include border-radius(15px);
+            bottom: 20px;
+            left: 50%;
+            @include transform(translateX(-50%));
+
+        }
+
+        .si-option_name {
+            font-family: $extra-bold_font-family_primary;
+            font-weight: $extra-bold_font-weight;
+            color: $white;
+            font-size: 18px;
+            padding: 0 16px;
+            text-align: center;
+            @include flexbox;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-transform: uppercase;
+            word-break: break-all;
+        }
+    }
+
+    &.si-productList {
+
+
+        .si-option {
+            // flex: 0 0 161px;
+            // width: 161px;
+            height: 232px;
+
+
+
+            &_name {
+                font-size: 16px;
+
+                &_wrapper {
+                    height: 49px;
+                    bottom: 16px;
+                }
+            }
+
+            .si-icon {
+                &::after {
+                    font-size: 80px;
+                    top: 80px;
+                }
+            }
+
+            .si-subotionswrapper {
+                height: 49px;
+                bottom: 16px;
+
+                .si-icon {
+                    &::after {
+                        font-size: 23px;
+                        top: 50%;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+    .si-options {
+        &.si-fiveGrid {
+            justify-content: flex-start;
+            align-items: flex-start;
+            overflow: auto;
+            margin-top: 0px;
+            padding: 10px 12px;
+
+            .si-dataRow {
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                height: auto; 
+                @media screen and (max-width:$media-laptop-max-1280) {
+                .si-option{
+                     flex: 0 0 249px;
+                     width:249px;
+                }
+               }
+               @media screen and (max-width:$media-desktop-small-max) {
+                justify-content: center;
+                align-items: center;
+                .si-option{
+                    flex: 0 0 232px;
+                     width:232px;
+                  
+                }
+               }
+               @media screen and (max-width:$media-tablet-med-max) {
+                margin-top: 77px;
+               
+               }
+               @media screen and (max-width:$media-mobile-max) {
+                .si-option{ 
+                    flex: 0 0 193px;
+                    width:193px;
+                    margin: 10px 21px;
+                }
+               
+               }
+               @media screen and (max-width:$media-mobile-max-680) {
+                .si-option{ 
+                    flex: 0 0 233px;
+                    width:233px;
+                }
+               
+               }
+               @media screen and (max-width:$media-mobile-max-520) {
+                .si-option{ 
+                    flex: 0 0 199px;
+                    width:199px;
+                }
+               
+               }
+               @media screen and (max-width:$media-mobile-small-max) {
+                .si-option{ 
+                    flex: 0 0 186px;
+                    width:186px;
+                }
+               }
+               @media screen and (max-width:$media-mobile-med-max) {
+                .si-option{ 
+                    flex: 0 0 288px;
+                    width:288px;
+                    margin: 10px 0px;
+                }
+               }
+            //    @media screen and (max-width:$media-desktop-small-max) {
+            //     justify-content: center;
+            //     align-items: center;
+            //     margin-top: 30px;
+            //     .si-option{
+            //         flex: 0 0 229px;
+            //         width:256px;
+            //     }
+            //    } 
+            //       @media screen and (max-width:$media-mobile-max) {
+            //     .si-option{
+            //         flex: 0 0 203px;
+            //         width:203px;
+            //         margin: 10px 22px;
+            //     }
+            //    }
+            //    @media screen and (max-width:$media-tablet-med-max) { 
+            //     margin-top: 80px;
+            //    } 
+            //    @media screen and (max-width:$media-mobile-max-580) {
+            //     .si-option{
+            //         flex: 0 0 216px;
+            //         width:216px;
+            //     }
+            //    }
+            //    @media screen and (max-width:$media-mobile-max-580) {
+            //     .si-option{
+            //         flex: 0 0 276px;
+            //         width:276px;
+            //     }
+            //    }
+            //    @media screen and (max-width:$media-mobile-small-max) {
+            //     .si-option{
+                
+            //         flex: 0 0 276px;
+            //         width:276px;
+            //     }
+            //    }
+            }
+        }
+     
+        .si-link2{
+            .si-subotionswrapper{
+
+                .si-icon{ 
+                    margin: 0 9px;
+               
+            }
+            }
+        }
+        
+    }
+
+
+
+}
+
+.swiper-container {
+    height: 100%;
+}
+.si-letter{
+    text-transform: initial !important;
+}

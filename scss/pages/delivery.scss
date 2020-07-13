@@ -1,0 +1,682 @@
+@import '../_mixins.scss';
+@import '../_variables.scss';
+@import '../_variables-en.scss';
+.si-hightlight{
+    color: #8B008B !important;
+}
+.si-popup {
+ 
+    .si-deliveryPopup {
+        @include border-radius(30px);
+        max-width: 700px;
+
+        .si-popup {
+            &-modal-bg {
+                max-width: 700px;
+                width: 100%;
+                min-height: 450px;
+                padding: 0px;
+                height: 100%;
+            }
+
+            &-body {
+                min-height: 450px;
+                display: block;
+                position: relative;
+
+                .si-packageNameInput {
+                    height: 30px;
+                    @include flexbox;
+                    justify-content: center;
+                    align-items: center;
+
+                    input {
+                        width: 100%;
+                        height: 100%;
+                        padding: 5px 10px;
+                        text-align: center;
+                        border: none;
+                        text-transform: uppercase;
+                        font-family: $medium_font-family_primary;
+                        font-weight: $medium_font-weight;
+                        font-size: 14px;
+                    }
+                }
+
+                .si-tab {
+
+                    &__container {
+                       
+                        padding: 18px 15px;
+                        overflow: hidden;
+                    } 
+                    
+                  
+                    &__form {
+                        height: 277px;
+                        position: relative;
+                        overflow: auto;
+                      
+                        .swiper-container1,.swiper-container2,.swiper-container3,.swiper-container4{
+                          height: 100%;
+                          .swiper-scrollbar{
+                            right: -8px;
+                          } 
+                          .swiper-slide{
+                            height: auto !important;
+                          }
+                        } 
+                        .si-acc{ 
+                            &:nth-of-type(2){
+                                // border-top:1px solid;
+                               
+                                padding-top: 8px;
+                            }  
+                            .si-tab__radioButton{
+                             margin-left: 38px;
+                            }
+                            .si-form__control{
+                              margin-left:38px;
+                              padding: 8px;
+                              
+                            } 
+                            .si-drpDwn__value{
+                              background: transparent;
+                            }
+                            &.active{ 
+                                background-color: #bbb;
+                                border-radius: 8px;
+                                .si-form__control{
+                                 
+                                }
+                                .si-accordianBlock {
+                                  
+                                //    border-top:1px solid;
+                                   
+
+                            
+                                
+                                
+                                    margin-bottom: 5px;
+                                    padding: 20px;
+                                    padding-left: 0;
+                                    margin-top: -11px;
+                                    // height: auto;
+                                    @include transform(scaleY(1));
+                                    // opacity: 1;
+                                    display: block;
+                                    .si-form__control{
+                                        padding: 0px !important;
+                                    }
+    
+                                } 
+                                .si-form {
+                                    &__control { 
+                                        .si-icon{
+                                            &.si-expand { 
+                                                &:after{
+                                                transform: rotate(180deg);
+                                                margin-top: -11px;
+                                            }    
+                                        }
+                                        }   
+                                    }
+                                }
+                            }
+                            .si-accordianBlock {
+                              background-color: #f1f1f1;
+                            //  border:1px solid  $header-secondary-color;
+                                // height: 0 !important;
+                                //  opacity: 0;
+                                display: none;
+                                // @include border-radius(8px);
+                                @include transform(scaleY(0));
+                                transform-origin: top;
+                                -webkit-transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+                                -moz-transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+                                -ms-transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+                                -o-transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+                                transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+                            }  
+                            .si-icon{
+                            &.si-add, &.si-minus{ 
+                                // margin-right: 30px;
+                            }  
+                           
+                        }
+                        } 
+                        .si-h{
+                            .si-icon{
+                                &.si-add, &.si-minus{ 
+                                    margin-right: 0px !important;
+                                }  
+                        }
+                        }
+                        .si-form {
+
+
+                          &__control {
+                            @include flexbox;
+                            justify-content: space-between;
+                              
+                            .si-startDate,.si-endDate{
+                              flex:0 0 37.5%;
+                              width:37.5%;
+                              position: relative;
+                              margin-right: 6px;
+
+                                      
+                              &::after{
+                                content: "\e90a";
+                                font-family: "genericadmin";
+                                position: absolute;
+                                right: 7px;
+                                font-size: 25px;
+                                color:$black;
+                            
+                              
+                            }
+
+                            }
+
+
+
+                               .si-headername,.si-headervalue{
+                                flex:0 0 46%;
+                                width:46%;
+                                position: relative;
+  
+                               }
+                             
+                               .si-language{
+                                // flex: 0 0 53%;
+                                // width:53%;
+                                flex: 0 0 45%;
+                                width:45%;
+                               }
+                               .si-location{
+                                flex: 0 0 43%;
+                                width:43%;
+                               }
+
+                            .si-input{
+                              width:100%;
+                            } 
+                            .si-folder{
+          
+                               .si-icon{
+                                   &.si-attach{
+                                    width: 39px;
+                                    height: 32px;
+                                    top: -5px;
+                                    border-radius: 10px;
+                                    border: 1px solid $table-active;
+                                    background-color:$lightgray;
+                                    left: 0;
+                                   &:after{
+                                    content: "\e928";
+                                    font-size: 22px;
+                                    color:$black;
+                                    transform: rotate(45deg);
+                                    top: 4px;
+                                    left: 2px;
+                                }
+                                
+                                       }
+                                   }
+                               } 
+                               .si-language{
+
+                               }
+                                .si-location{ 
+                                    .si-label{
+                                        flex: 0 0 89px;
+                                        
+                                    }
+                                    .si-icon{
+                                        &.si-attach{
+                                        width: 46px;
+                                        height: 32px;
+                                        
+                                        border-radius: 10px;
+                                        border: 1px solid $table-active;
+                                        background-color:$lightgray;
+                                        left: 0;
+                                        &:after{
+                                        content: "\e928";
+                                        font-size: 22px;
+                                        color:$black;
+                                        transform: rotate(45deg);
+                                        top: 4px;
+                                        left: 2px;
+                                    }
+                                    
+                                            }
+                                        }
+                                }
+
+                            .si-icon{
+                              &.si-add, &.si-minus{
+                                width:25px;
+                                height: 25px;
+                                border-radius: 50%;
+                                border: 1px solid;
+                                margin-top: 5px;
+                                margin-left: 0px;
+                                float: right;
+                               
+                              }
+                              &.si-add{
+                                  &::after{
+                                      content: "\e912";
+                                      font-size: 13px;
+
+                                    
+                                  }
+                             }  
+
+                             &.si-minus{
+                               &::after{
+                                content: "\e90e";
+                                font-size: 13px;
+
+                               }
+                             } 
+                             &.si-expand {
+                                position: absolute;
+                                width: 25px;
+                                height: 25px;
+                                margin-right: 2px;
+                                margin-top: 0px;
+                                left: 8px;
+                              
+                           
+                                &:after {
+                                    content: "\e91a";
+                                    font-size: 20px;
+                                    
+                
+                                }
+                            }
+                            }
+                          }
+                        }
+                        .si-label,.si-label2{
+                            flex: 0 0 148px;
+                            @include flexbox;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            padding-top: 7px;
+                            font-family: $bold_font-family_primary;
+                            font-weight:$bold_font-weight;
+                            color: rgba($header-secondary-color, .7);
+                            font-size:14px;
+                        }
+                        .si-label2{
+                            flex: 0 0 119px;
+                        }
+                        .si-drpDwn {
+                            @include flexbox;
+                            width: 100%;
+                            flex-flow: column;
+                            flex-wrap: wrap;
+                            overflow: hidden;
+                            &__value {
+                                height: auto;
+                                padding: 8px 10px;
+                                padding-right: 40px;
+                                text-transform: capitalize;
+                                font-family: $medium_font-family_primary;
+                                font-weight: $medium_font-weight;
+                                font-size: 14px;
+                                border: none;
+                                white-space: normal;
+                                border-bottom: 1px solid rgba($header-secondary-color, .5);
+                                color: rgba($header-secondary-color, .7);
+                                padding-bottom: 9px;
+                                &::after {
+                                    content: "\e905";
+                                    @include transform(translateY(-50%) rotate(180deg));
+                                    right: 5px;
+                                }
+                            }
+                            &.active {
+                                .si-drpDwn__value {
+                                    &::after {
+                                        @include transform(translateY(-50%) rotate(0deg));
+                                    }
+                                }
+                            }
+
+                            &__list {
+                                top: 0px;
+                                background: rgba($gray, .4);
+                                @include border-radius(0px 0px 20px 20px);
+                                padding: 20px 10px 10px;
+                                box-shadow: 0 0 0;
+                                position: relative;
+                                overflow: auto;
+                                &::after {
+                                    content: '';
+                                    width: 100%;
+                                    height: 12px;
+                                    position: absolute;
+                                    // @include linearGradient(to top, #fff, rgba(255, 255, 255, 0));                            
+                                    bottom: 0px;
+                                    left: 0px;
+                                }
+
+                                .si-searchBox {
+                                    max-width: 100%;
+                                    margin-bottom: 15px;
+
+                                    input {
+                                        @include border-radius(50px);
+                                    }
+                                }
+
+                                li {
+                                    height: auto;
+
+                                    padding: 0px 25px;
+                                    margin-bottom: 10px;
+                                    border-bottom: none;
+
+                                    &:hover {
+                                        background-color: $transparent;
+                                    }
+
+                                    &.si-checkBox {
+                                        [type="checkbox"] {
+                                            // &:checked{
+                                            //     &+label {
+                                            //         color:red;
+                                            //     } 
+                                            // }
+                                            &:checked,
+                                            &:not(:checked) {
+                                                &+label {
+                                                    padding-right: 40px;
+                                                    padding-left: 0px;
+                                                    display: block;
+                                                    font-family: $medium_font-family_primary;
+                                                    font-weight: $medium_font-weight;
+                                                    font-size: 14px;
+                                                    color: $header-primary-color;
+
+                                                    &::before,
+                                                    &::after {
+                                                        @include border-radius(50%);
+                                                        width: 20px;
+                                                        height: 20px;
+                                                        top: 50%;
+                                                        @include transform(translateY(-50%))
+                                                    }
+
+                                                    &:before {
+                                                        right: 0;
+                                                        left: auto;
+
+                                                    }
+
+                                                    &:after {
+                                                        right: 0px;
+                                                        left: auto;
+                                                        content: "\e90d";
+                                                        background: $black;
+                                                        color: $white;
+                                                        font-size: 12px;
+                                                    }
+                                                }
+                                            }
+                                     
+
+                                            &:not(:checked) {
+                                                &+label { 
+
+                                                    &:after {
+                                                        color: $header-primary-color;
+                                                        background: $transparent;
+                                                        @include transform(translateY(-50%) scale(1));
+                                                        opacity: 1;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            } 
+                            .swiper-scrollbar{
+                              right:0px;
+                            } 
+                        }
+
+                        .si-input{
+                          @include flexbox;
+                            input{
+                                // height: 38px;
+                                height: 33px;
+                                padding: 8px 10px;
+                                padding-right: 0px;
+                               
+                                font-family: $medium_font-family_primary;
+                                font-weight: $medium_font-weight;
+                                font-size: 14px;
+                                border: none;
+                                border-bottom: 1px solid rgba($header-secondary-color, .5);
+                                @include placeholder {color: rgba($header-secondary-color, .7);text-transform: capitalize}
+                            }  
+
+                   
+                        }
+
+                    }
+                    
+                    &__button {
+                        @include flexbox;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 27px;
+                        padding-bottom: 40px;
+                        position: relative;
+
+                        .si-btn {
+                            min-width: 180px;
+                            height: 30px;
+                            background-color: transparent;
+                            border: 1px solid $client-primary-color;
+                            @include border-radius(25px);
+                            font-family: $bold_font-family_primary;
+                            font-weight: $bold_font-weight;
+                            font-size: 14px;
+
+                            &:not(:last-child) {
+                                margin-right: 15px;
+                            }
+                        }
+
+                        .si-icon {
+                            position: absolute;
+                            width: 25px;
+                            height: 25px;
+
+                            &::after {
+                                font-size: 14px;
+                            }
+
+                            &.si-disable {
+                                &::after {
+                                    color: #afb6bc
+                                }
+                            }
+
+                            &.si-previous {
+                                left: 10px;
+
+                                &::after {
+                                    content: "\e905";
+                                    @include transform(translateY(-50%) rotate(-90deg));
+                                }
+                            }
+
+                            &.si-popupnext {
+                                right: 10px;
+
+                                &::after {
+                                    content: "\e905";
+                                    @include transform(translateY(-50%) rotate(90deg));
+                                }
+                            } 
+
+                  
+                        }
+                    }
+
+                    &__radioButton {
+                        @include flexbox;
+                        align-items: center;
+                        justify-content: flex-start;
+                      
+                        margin-top: 20px;
+
+                        .si-radioBox {
+                            text-transform: capitalize;
+                          
+                            font-size: 14px;
+
+                            [type="radio"] {
+
+                                &:checked,
+                                &:not(:checked) {
+                                    &+label {
+                                        padding-left: 21px;
+                                      
+                                        line-height: 18px;
+                                    }
+                                } 
+
+                                &:not(:checked) {
+                                  &+label {
+                                    font-family: $medium_font-family_primary;
+                                    font-weight: $medium_font-weight;
+                                    color: rgba($header-secondary-color, .7);
+                                  }
+                                } 
+
+                                &:checked {
+                                    &+label {
+                                      font-family: $semi-bold_font-family_primary;
+                                      font-weight:$semi-bold-weight;
+                                      color: $black;
+                                    }
+                                } 
+                            }
+
+                            &:not(:last-child) {
+                                margin-right: 10px;
+                            }
+                        }
+                    }
+
+                    &__link {
+                        &.active , &.completed {
+                            a {
+                                border-top: 1px dotted $table-active;
+
+                                &:before {
+                                    background-color: $table-active;
+                                    border: none;
+                                    transition: all 200ms ease-in;
+                                }
+                            }
+                        }
+
+                        a {
+                            padding: 0px 40px;
+                            @include flexbox;
+                            display: flex;
+                            justify-content: center;
+                            border-top: 1px dotted #d6dce0;
+                            position: relative;
+                            @include transition(all, 200ms, ease-in);
+
+                            &:before {
+                                content: "";
+                                width: 28px;
+                                height: 28px;
+                                background-color: $white;
+                                border-radius: 25px;
+                                border: 1px dotted #ddd;
+                                position: absolute;
+                                top: -14px;
+                                left: 50%;
+                                @include transform(translateX(-50%));
+                                @include transition(all, 200ms, ease-in);
+                            }
+
+                            span {
+                                position: absolute;
+                                left: 50%;
+                                width: 24px;
+                                height: 24px;
+                                top: 50%;
+                                @include flexbox;
+                                justify-content: center;
+                                align-items: center;
+                                color: $header-primary-color !important;
+                                font-family: $bold_font-family_primary;
+                                font-weight: $bold_font-weight;
+                                font-size: 14px;
+                                @include transform(translate(-50%, -50%));
+                                cursor: default;
+                            }
+                        }
+
+                        &s {
+                            @include flexbox;
+                            justify-content: center;
+                            align-items: center;
+                            margin: 20px 0px;
+                        }
+                    }
+                }
+            }
+
+            &header {
+                position: relative;
+                width: 100%;
+                height: 52px;
+                background-color: $header-secondary-color;
+                @include flexbox;
+                justify-content: center;
+                align-items: center;
+                @include border-radius(50px);
+                font-family: $bold_font-family_primary;
+                font-weight: $bold_font-weight;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: $client-primary-color;
+            }
+
+            &-close {
+                right: 10px;
+                top: 10px;
+                z-index: 1;
+
+                .si-icon {
+                    &::after {
+                        content: '\e910';
+                        border: 1px solid $white;
+                        color: $white;
+                        font-size: 11px;
+                    }
+                }
+            }
+            
+
+
+        }
+    }
+
+
+}
