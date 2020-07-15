@@ -676,6 +676,9 @@
                         position: relative;
                         padding-top: 12px;
                         overflow: auto;
+                        &.si-f{
+                            height:265px !important;
+                        }
                         .swiper-container10{
                           height: 100%;
                           .swiper-scrollbar{
@@ -900,7 +903,7 @@
                                 }
                             }
                     }
-
+                 
                     &__button {
                         @include flexbox;
                         align-items: center;
