@@ -25,13 +25,24 @@
                     max-width: 100%;
                   
                 }
+                @media only screen and (min-device-width:$media-mobile-med) and (max-device-width: $media-tablet-small-max) and (orientation: landscape) {
+                    min-height: 100%;
+                    margin-top: 10px;
+                    }
             }
 
             &-body {
                 min-height: 450px;
                 display: block;
                 position: relative;
-
+                @media only screen and (min-device-width:$media-mobile-med) and (max-device-width: $media-tablet-small-max) and (orientation: landscape) {
+                    height: 100%;
+                    background: #fff;
+                    max-height: 100%;
+                    margin-bottom: 20px;
+                    border-top-right-radius: 27px;
+                    border-top-left-radius: 27px;
+                }
                 .si-packageNameInput {
                     height: 30px;
                     @include flexbox;

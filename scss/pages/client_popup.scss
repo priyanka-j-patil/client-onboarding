@@ -9,6 +9,10 @@
     .si-clienttPopup {
         @include border-radius(30px);
         max-width: 700px;
+        @media screen and (max-width:$media-mobile-max-680) {  
+            max-width: 100%;
+            margin: 0 10px;     
+        }
 
         .si-popup {
             &-modal-bg {
@@ -17,13 +21,24 @@
                 min-height: 450px;
                 padding: 0px;
                 height: 100%;
+                @media only screen and (min-device-width:$media-mobile-med) and (max-device-width: $media-tablet-small-max) and (orientation: landscape) {
+                    min-height: 100%;
+                    margin-top: 10px;
+                    }
             }
 
             &-body {
                 min-height: 450px;
                 display: block;
                 position: relative;
-
+                @media only screen and (min-device-width:$media-mobile-med) and (max-device-width: $media-tablet-small-max) and (orientation: landscape) {
+                    height: 100%;
+                    background: #fff;
+                    max-height: 100%;
+                    margin-bottom: 20px;
+                    border-top-right-radius: 27px;
+                    border-top-left-radius: 27px;
+                }
                 .si-packageNameInput {
                     height: 30px;
                     @include flexbox;
@@ -50,7 +65,7 @@
                         padding: 0px 15px;
                         overflow: hidden;
                     } 
-        
+                
 
                     &__form {
                         height: 277px;
@@ -66,7 +81,17 @@
                           }
                         } 
                       
-       
+                        .si-four{
+                            .si-label2{
+                                @media screen and (max-width:$media-mobile-max-580) {  
+                                    flex: 0 0 99px;
+                                }
+                                @media screen and (max-width:$media-mobile-med-max) {  
+                                    flex: 0 0 70px;
+                                }
+                            }
+                        }
+            
                         .si-form {
 
                  
@@ -75,13 +100,31 @@
                           &__control {
                             @include flexbox;
                             justify-content: space-between;
-                              
+                            .si-http{
+                                .si-label2{
+                                    @media screen and (max-width:$media-mobile-max-580) {  
+                                        flex: 0 0 99px;
+                                    }
+                                    @media screen and (max-width:$media-mobile-med-max) {  
+                                        flex: 0 0 70px;
+                                    }
+                                }
+                            }
+                       
                             .si-startDate,.si-endDate{
                               flex:0 0 37.5%;
                               width:37.5%;
                               position: relative;
                               margin-right: 6px;
-
+                              @media screen and (max-width:$media-mobile-max-640) {  
+                                // flex:0 0 36.9%;
+                                // width:36.9%;
+                                flex:1;
+                                .si-endDate{
+                                    margin-right:0 !important;
+                                } 
+                            
+                               }
                                       
                               &::after{
                                 content: "\e90a";
@@ -90,7 +133,12 @@
                                 right: 7px;
                                 font-size: 25px;
                                 color:$black;
-                            
+                                @media screen and (max-width:$media-mobile-small-max) {  
+                                    right: 0px;
+                                    font-size: 19px;
+                                  
+                                    top: 8px;
+                                  }
                               
                             }
 
@@ -102,17 +150,52 @@
                                 flex:0 0 46%;
                                 width:46%;
                                 position: relative;
+                                @media screen and (max-width:$media-mobile-med-max) {  
+                                    .si-label2{
+                                        flex: 0 0 55px;
+                                    }
+                                }
   
                                }
                              
                                .si-language{
                                 flex: 0 0 53%;
                                 width:53%;
-                              
+                                @media screen and (max-width:$media-mobile-max-580) {  
+                                flex: 0 0 47%;
+                                width:47%;
+                                }
+                                @media screen and (max-width:$media-mobile-small-max) {  
+                                    flex: 0 0 48%;
+                                    width: 48%;
+                                    margin-right: 12px;
+                                }
+                                @media screen and (max-width:$media-mobile-med-max) {  
+                                    flex: 0 0 46%;
+                                    width:46%;
+                                    .si-drpDwn{
+                                        &__value{
+                                            &:after{
+                                                right: 0px;
+                                                font-size: 9px;  
+                                            }
+                                        }
+                                    }
+                                }
+                                @media screen and (max-width:$media-mobile-small-max) {  
+                                    .si-label{
+                                        flex: 0 0 72px;
+                                    }
+                                }
                                }
                                .si-location{
                                 flex: 0 0 43%;
                                 width:43%;
+                                @media screen and (max-width:$media-mobile-small-max) {  
+                                    flex: 0 0 45%;
+                                    width: 45%;
+                                  
+                                }
                                }
 
                             .si-input{
@@ -136,6 +219,13 @@
                                     transform: rotate(45deg);
                                     top: 4px;
                                     left: 2px;
+                                    @media screen and (max-width:$media-mobile-small-max) {  
+                                        left:0;
+                                      }
+                                      @media screen and (max-width:$media-mobile-small-max-384) {  
+                                          font-size: 19px;
+                                          top: 6px;
+                                        }
                                 }
                                 
                                        }
@@ -147,7 +237,12 @@
                                 .si-location{ 
                                     .si-label{
                                         flex: 0 0 89px;
-                                        
+                                        @media screen and (max-width:$media-mobile-max-580) {  
+                                            flex: 0 0 83px;
+                                        }
+                                        @media screen and (max-width:$media-mobile-small-max) {  
+                                            flex: 0 0 62px;
+                                        }
                                     }
                                     .si-icon{
                                         &.si-attach{
@@ -165,6 +260,14 @@
                                         transform: rotate(45deg);
                                         top: 4px;
                                         left: 2px;
+                                        @media screen and (max-width:$media-mobile-max-640) {  
+                                            font-size: 20px;
+                                        }
+                                        @media screen and (max-width:$media-mobile-med-max) {  
+                                            font-size: 17px;
+                                            top: 7px;
+                                        }
+                                      
                                     }
                                     
                                             }
@@ -180,13 +283,18 @@
                                 margin-top: 5px;
                                 margin-left: 0px;
                                 float: right;
-                               
+                                @media screen and (max-width:$media-mobile-small-max) {  
+                                    widows: 22px;
+                                    height: 22px;
+                                }
                               }
                               &.si-add{
                                   &::after{
                                       content: "\e912";
                                       font-size: 13px;
-
+                                      @media screen and (max-width:$media-mobile-small-max) {  
+                                        font-size: 11px;
+                                      }
                                     
                                   }
                              }  
@@ -195,7 +303,9 @@
                                &::after{
                                 content: "\e90e";
                                 font-size: 13px;
-
+                                @media screen and (max-width:$media-mobile-small-max) {  
+                                    font-size: 11px;
+                                  }
                                }
                              } 
                           
@@ -203,8 +313,25 @@
                            
                           }
                         }  
-               
-                       
+                        @media screen and (max-width:$media-mobile-small-max) {  
+                            .si-dates{
+                             @include flexbox;
+                             flex-flow:column;
+                             .si-label{
+                                 flex:1;
+                             }
+                            }
+                         }
+                         .si-http{
+                            .si-label2{ 
+                                @media screen and (max-width:$media-mobile-max-580) {  
+                                    flex: 0 0 99px;
+                                }
+                                @media screen and (max-width:$media-mobile-med-max) {  
+                                    flex: 0 0 70px;
+                                }
+                            }
+                         }
                         .si-label,.si-label2{
                             flex: 0 0 148px;
                             @include flexbox;
@@ -215,10 +342,33 @@
                             font-weight:$bold_font-weight;
                             color: rgba($header-secondary-color, .7);
                             font-size:14px;
+                            @media screen and (max-width:$media-mobile-max-680) {  
+                                font-size:13px;
+                              }
+                              @media screen and (max-width:$media-mobile-max-580) {  
+                                font-size:12px;
+                            }
+                           
+                        } 
+                        .si-label{
+                            @media screen and (max-width:$media-mobile-small-max) {  
+                                flex: 0 0 126px;
+                              }
+                              @media screen and (max-width:$media-mobile-max-580) {  
+                                flex: 0 0 103px;
+                            }
+                            @media screen and (max-width:$media-mobile-small-max) {  
+                                // flex: 0 0 92px;
+                            }
+                           
                         }
                         .si-label2{
                             flex: 0 0 119px;
-                        }
+                            @media screen and (max-width:$media-mobile-max-580) {  
+                                flex: 0 0 102px;
+                            }
+                        
+                        } 
                         .si-drpDwn {
                             @include flexbox;
                             width: 100%;
@@ -238,6 +388,12 @@
                                 border-bottom: 1px solid rgba($header-secondary-color, .5);
                                 color: rgba($header-secondary-color, .7);
                                 padding-bottom: 9px;
+                                @media screen and (max-width:$media-mobile-max-680) {  
+                                    font-size:12px;
+                                   }
+                                   @media screen and (max-width:$media-mobile-med-max) {  
+                                    padding: 8px 1px;
+                                   }
                                 &::after {
                                     content: "\e905";
                                     @include transform(translateY(-50%) rotate(180deg));
@@ -368,6 +524,20 @@
                                 border: none;
                                 border-bottom: 1px solid rgba($header-secondary-color, .5);
                                 @include placeholder {color: rgba($header-secondary-color, .7);text-transform: capitalize}
+                                @media screen and (max-width:$media-mobile-max-680) {  
+                                   font-size:12px;
+                                  }
+
+                                  @media screen and (max-width:$media-mobile-small-max) {  
+                                   overflow: hidden;
+                                    -o-text-overflow: ellipsis;
+                                    -ms-text-overflow: ellipsis;
+                                    text-overflow: ellipsis;
+                                   }
+                                   @media screen and (max-width:$media-mobile-med-max) {  
+                                    padding: 8px 5px;
+                                   }
+                                  
                             }  
 
                    
@@ -392,6 +562,12 @@
                             font-family: $bold_font-family_primary;
                             font-weight: $bold_font-weight;
                             font-size: 14px;
+                            @media screen and (max-width:$media-mobile-small-max) {  
+                                min-width: 151px;
+                              }
+                              @media screen and (max-width:$media-mobile-small-max-384) {  
+                                min-width: 120px;
+                              }
 
                             &:not(:last-child) {
                                 margin-right: 15px;
@@ -540,6 +716,9 @@
                             justify-content: center;
                             align-items: center;
                             margin: 20px 0px;
+                            @media screen and (max-width:$media-mobile-small-max) {  
+                                margin: 32px 0px;
+                              }
                         }
                     }
                 }
